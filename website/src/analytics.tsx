@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { Metric } from 'web-vitals';
 import { DOWNLOAD_URL, RELEASE_VERSION } from './release';
 import { SITE_NOINDEX, SITE_URL } from './site';
 
@@ -10,6 +11,7 @@ const knownPaths = new Set(['/', '/download', '/guides/iphone-location-simulatio
 let currentPath = '/';
 let active = false;
 let pageviewSent = false;
+let webVitalsStarted = false;
 
 function command(_name: string, ..._values: unknown[]) {
   window.dataLayer ??= [];
@@ -21,8 +23,38 @@ function optedIn() {
 function safeReferrer() {
   try { return new URL(document.referrer).origin; } catch { return ''; }
 }
+function canMeasure() {
+  return active && configured && optedIn() && location.origin === SITE_URL
+    && knownPaths.has(currentPath) && location.pathname === currentPath;
+}
+function reportWebVital({ name, delta, value, id }: Metric) {
+  if (!canMeasure() || !['LCP', 'INP', 'CLS'].includes(name)
+    || !Number.isFinite(value) || !Number.isFinite(delta)) return;
+  // Follow Google's GA4 delta model. Never forward entries, DOM attribution,
+  // navigation URLs, or the full metric object. IDs identify metric instances.
+  command('event', name, {
+    send_to: measurementId, page_location: `${SITE_URL}${currentPath}`,
+    value: delta, metric_id: id, metric_value: value, metric_delta: delta,
+  });
+}
+async function startWebVitals() {
+  if (webVitalsStarted || !canMeasure()) return;
+  try {
+    // The standard build is self-hosted in a separate chunk, requested only
+    // after opt-in. Its observers provide real metrics, not an INP estimate.
+    const { onCLS, onINP, onLCP } = await import('web-vitals');
+    if (webVitalsStarted || !canMeasure()) return;
+    webVitalsStarted = true;
+    onCLS(reportWebVital);
+    onINP(reportWebVital);
+    onLCP(reportWebVital);
+  } catch {
+    // Optional measurement failure must not interrupt the site or invent data.
+  }
+}
 function activate() {
-  if (active || !configured || location.origin !== SITE_URL || !knownPaths.has(currentPath)) return;
+  if (active || !configured || !optedIn() || location.origin !== SITE_URL
+    || !knownPaths.has(currentPath) || location.pathname !== currentPath) return;
   active = true;
   (window as unknown as Record<string, unknown>)[`ga-disable-${measurementId}`] = false;
   command('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
@@ -41,15 +73,16 @@ function activate() {
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
   document.head.appendChild(script);
+  void startWebVitals();
 }
 
 export function initializeAnalytics(path: string) {
   currentPath = path;
-  if (!configured || location.origin !== SITE_URL || !knownPaths.has(path)) return;
+  if (!configured || location.origin !== SITE_URL || !knownPaths.has(path) || location.pathname !== path) return;
   if (optedIn()) activate();
   // One listener, one event per actual ZIP-link click. Dialog opens do not count.
   document.addEventListener('click', event => {
-    if (!active || event.defaultPrevented || !(event.target instanceof Element)) return;
+    if (!canMeasure() || event.defaultPrevented || !(event.target instanceof Element)) return;
     const link = event.target.closest<HTMLAnchorElement>('a[data-download]');
     if (link?.href !== DOWNLOAD_URL) return;
     command('event', 'download_click', { send_to: measurementId, release_version: RELEASE_VERSION, platform: 'macos-arm64', page_location: `${SITE_URL}${path}` });
@@ -91,6 +124,6 @@ export function AnalyticsPreferences() {
   }
   return <section className="analytics-preferences" id="analytics-preferences" aria-labelledby="analytics-title">
     <h2 id="analytics-title">Your analytics choice</h2>
-    {configured ? <><p>Allow Google Analytics to measure page visits and Mac download-link clicks. Google receives browser and network information when enabled. Advertising features are disabled. Your choice applies to this browser.</p><div className="analytics-actions"><button className="button button-secondary" type="button" aria-pressed={allowed} onClick={() => choose(true)}>Allow analytics</button><button className="button button-secondary" type="button" aria-pressed={!allowed} onClick={() => choose(false)}>Keep analytics off</button></div><p role="status">{message}</p><noscript><p>JavaScript is disabled, so optional analytics are off.</p></noscript></> : <p>Optional analytics are not configured for this site. No Google Analytics script is loaded.</p>}
+    {configured ? <><p>Allow Google Analytics to measure page visits, Mac download-link clicks, and page loading, responsiveness, and layout stability. Google receives browser and network information when enabled. Advertising features are disabled. Your choice applies to this browser.</p><div className="analytics-actions"><button className="button button-secondary" type="button" aria-pressed={allowed} onClick={() => choose(true)}>Allow analytics</button><button className="button button-secondary" type="button" aria-pressed={!allowed} onClick={() => choose(false)}>Keep analytics off</button></div><p role="status">{message}</p><noscript><p>JavaScript is disabled, so optional analytics are off.</p></noscript></> : <p>Optional analytics are not configured for this site. No Google Analytics script is loaded.</p>}
   </section>;
 }
