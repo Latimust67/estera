@@ -17,7 +17,7 @@ The unauthenticated API returned HTTP 429 (shared consumer-project quota). The o
 
 Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36. Mobile emulated Moto G Power with Slow 4G throttling; desktop used the service's desktop/custom-throttling profile. Each is a single initial-page-load lab observation. All three reports show **No Data** in the real-user section. No INP or field Core Web Vitals pass is claimed. A 100 basic SEO score covers only Lighthouse's limited checks.
 
-The service suggests render-blocking CSS and unused-JavaScript opportunities. Current lab results do not justify removing the stylesheet that makes the server-rendered page readable, or a broad optimization loop. Revisit with field evidence. Optional consented field measurement remains dependent on analytics account setup.
+The service suggests render-blocking CSS and unused-JavaScript opportunities. Current lab results do not justify removing the stylesheet that makes the server-rendered page readable, or a broad optimization loop. Revisit with field evidence. The approved Analytics account is now configured and consented field measurement is enabled. Focused delivery evidence is separate in [analytics-acceptance.md](analytics-acceptance.md); these lab runs predate that activation and do not measure its opted-in overhead.
 
 ## Structured data
 

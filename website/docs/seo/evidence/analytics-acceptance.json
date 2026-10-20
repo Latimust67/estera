@@ -1,0 +1,286 @@
+{
+  "checkedAt": "2026-10-20T22:56:15.516Z",
+  "origin": "https://estera-virid.vercel.app",
+  "deployment": "dpl_4FcH59LE5XynhL367KvN1jEEpsDN",
+  "measurementId": "G-HL1L7MX0B5",
+  "scope": "Actual public GA requests; fresh isolated browser; no archive downloaded",
+  "checks": [
+    {
+      "name": "Fresh state loads no Google script or analytics event",
+      "passed": true,
+      "scriptRequests": 0,
+      "eventCount": 0
+    },
+    {
+      "name": "Explicit opt-in produces one privacy page_view",
+      "passed": true,
+      "pageViews": 1,
+      "scriptRequests": 1
+    },
+    {
+      "name": "Dialog open/cancel and unrelated destination interaction produce no download event",
+      "passed": true
+    },
+    {
+      "name": "Download page load and refresh produce no download event",
+      "passed": true,
+      "pageViewAddedOnRefresh": 1
+    },
+    {
+      "name": "One actual ZIP-link click sends exactly one download_click",
+      "passed": true,
+      "downloadEvents": 1,
+      "archiveTransfersAborted": 1
+    },
+    {
+      "name": "Unrelated navigation adds no duplicate download event",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal removes GA cookies/library and stops later collection through navigation and refresh",
+      "passed": true,
+      "laterEvents": 0,
+      "laterGoogleScriptRequests": 0,
+      "gaCookieCount": 0,
+      "libraryAbsentAfterReload": true
+    },
+    {
+      "name": "Collected payload locations/referrers/custom fields pass redaction contract",
+      "passed": true,
+      "eventCount": 8,
+      "eventsViolatingContract": 0
+    },
+    {
+      "name": "No Enhanced Measurement duplicate download/click/scroll/form/search/video events observed",
+      "passed": true,
+      "unexpectedEventNames": []
+    },
+    {
+      "name": "Observed Web Vitals events contain finite values and a metric-instance identifier",
+      "passed": true,
+      "observedNames": [
+        "LCP"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "requestNumber": 1,
+      "phase": "opt-in",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/privacy",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    },
+    {
+      "requestNumber": 2,
+      "phase": "home-and-dialog",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    },
+    {
+      "requestNumber": 3,
+      "phase": "resume-consent-prerequisite",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/privacy",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    },
+    {
+      "requestNumber": 4,
+      "phase": "download-navigation",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/download",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    },
+    {
+      "requestNumber": 5,
+      "phase": "download-refresh",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/download",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    },
+    {
+      "requestNumber": 6,
+      "phase": "exact-zip-click",
+      "name": "download_click",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/download",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [
+        "release_version",
+        "platform"
+      ],
+      "unexpectedCustomParameterNames": [],
+      "releaseVersion": "0.1.2",
+      "platform": "macos-arm64"
+    },
+    {
+      "requestNumber": 6,
+      "phase": "exact-zip-click",
+      "name": "LCP",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/download",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [
+        "value",
+        "metric_id",
+        "metric_value",
+        "metric_delta"
+      ],
+      "unexpectedCustomParameterNames": [],
+      "metricValue": 192,
+      "metricDelta": 192,
+      "value": 192,
+      "metricIdPresent": true
+    },
+    {
+      "requestNumber": 7,
+      "phase": "post-click-unrelated",
+      "name": "page_view",
+      "measurementIdMatches": true,
+      "pageLocation": "https://estera-virid.vercel.app/privacy",
+      "canonicalKnownPath": true,
+      "referrerOriginOnly": true,
+      "syntheticQueryOrReferrerTextLeaked": false,
+      "customParameterNames": [],
+      "unexpectedCustomParameterNames": []
+    }
+  ],
+  "requestStatuses": [
+    {
+      "requestNumber": 1,
+      "status": 204
+    },
+    {
+      "requestNumber": 2,
+      "status": 204
+    },
+    {
+      "requestNumber": 4,
+      "status": 204
+    },
+    {
+      "requestNumber": 5,
+      "status": 204
+    },
+    {
+      "requestNumber": 6,
+      "status": 204
+    },
+    {
+      "requestNumber": 7,
+      "status": 204
+    }
+  ],
+  "googleScriptRequests": 8,
+  "zipTransfersAborted": 1,
+  "errors": [],
+  "unexpectedFailedRequests": [
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "origin": "https://www.google-analytics.com",
+      "path": "/g/collect",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "notes": [
+    "Only the outgoing GitHub ZIP transfer was aborted after a real link click; download_click measures intent, not completed download/installation.",
+    "No raw GA request URL/body, cookie value, client ID, session ID or metric-instance ID is retained in this evidence. Standard Google browser/network collection is outside the custom-field redaction contract.",
+    "A duplicate accessible name interrupted the first browser after two accepted page views. Only unfinished scenarios resumed; explicit opt-in was repeated solely to recreate consent in the fresh non-persisted continuation context."
+  ],
+  "browserVersion": "153.0.8010.12",
+  "finishedAt": "2026-10-20T23:02:47.729Z",
+  "eventCounts": {
+    "page_view": 6,
+    "download_click": 1,
+    "LCP": 1
+  },
+  "harnessInterruptions": [
+    {
+      "message": "locator.click: Error: strict mode violation: getByRole('button', { name: /Tokyo/ }) resolved to 2 elements:\n    1) <button type=\"button\" aria-pressed=\"false\">…</button> aka getByText('Tokyo')\n    2) <button type=\"button\" aria-label=\"Tokyo\" aria-pressed=\"false\">…</button> aka getByLabel('Tokyo')\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Tokyo/ })\u001b[22m\n"
+    }
+  ],
+  "continuedAt": "2026-10-20T23:02:12.729Z",
+  "webVitals": {
+    "observedNames": [
+      "LCP"
+    ],
+    "counts": {
+      "LCP": 1,
+      "CLS": 0,
+      "INP": 0
+    },
+    "allObservedMetricsFinite": true,
+    "limitations": "Only genuine browser-generated metrics observed during these page loads/interactions are recorded; no metric was synthesized. These are lab sessions, not representative field results.",
+    "allObservedMetricFieldsPresent": true
+  },
+  "providerReporting": {
+    "status": "Pending evidence",
+    "observedBy": "Main task in the correct Estera GA property",
+    "result": "Realtime still showed 0 active users and No data available after bounded observation and one refresh; no additional polling or events sent to force reporting.",
+    "evidence": "google-analytics-realtime-pending.png"
+  },
+  "deliverySummary": {
+    "observedEvents": 8,
+    "eventsWithRecorded204": 7,
+    "observedPageViews": 6,
+    "pageViewsWithRecorded204": 5,
+    "abortedGaRequests": 6,
+    "providerReportingVerified": false,
+    "clsDeliveryVerified": false,
+    "inpDeliveryVerified": false
+  }
+}
