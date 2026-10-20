@@ -1,0 +1,306 @@
+{
+  "checkedAt": "2026-10-20T20:18:10.089Z",
+  "mode": "saved production HTML; no browser or live deployment check",
+  "site": "https://estera-virid.vercel.app",
+  "noindex": false,
+  "failures": [],
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Estera — Free iPhone Location Simulator for Mac",
+      "titleLength": 47,
+      "metaDescription": "Simulate iPhone locations and routes with Estera, a free, open-source Mac app. Apple Silicon, macOS 15+ and USB required. Download the preview and read setup guides.",
+      "metaDescriptionLength": 165,
+      "canonical": "https://estera-virid.vercel.app/",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Your iPhone. Somewhere else. ✳"
+      ],
+      "h2Count": 10,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebSite",
+        "WebPage"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "Estera — Free iPhone Location Simulator for Mac",
+      "ogDescription": "Simulate iPhone locations and routes with Estera, a free, open-source Mac app. Apple Silicon, macOS 15+ and USB required. Download the preview and read setup guides.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 2,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 14,
+      "externalLinks": 10,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 1149,
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "path": "/download",
+      "file": "download.html",
+      "title": "Download Estera for Mac — Free iPhone Location Simulator",
+      "titleLength": 56,
+      "metaDescription": "Download the free Estera Mac preview for Apple Silicon and macOS 15+. Read USB requirements, installation steps, signing details, and current limitations.",
+      "metaDescriptionLength": 154,
+      "canonical": "https://estera-virid.vercel.app/download",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Download Estera for Mac"
+      ],
+      "h2Count": 5,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "Download Estera for Mac — Free iPhone Location Simulator",
+      "ogDescription": "Download the free Estera Mac preview for Apple Silicon and macOS 15+. Read USB requirements, installation steps, signing details, and current limitations.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 0,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 17,
+      "externalLinks": 8,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 455,
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "path": "/guides/iphone-location-simulation",
+      "file": "guides/iphone-location-simulation.html",
+      "title": "iPhone Location Simulation Guide for Mac | Estera",
+      "titleLength": 49,
+      "metaDescription": "Follow Estera’s USB setup, choose a pin, understand preview versus device actions, and use Stop/reset. Includes Mac preview compatibility and reset limitations.",
+      "metaDescriptionLength": 160,
+      "canonical": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Your first iPhone location simulation"
+      ],
+      "h2Count": 6,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "iPhone Location Simulation Guide for Mac | Estera",
+      "ogDescription": "Follow Estera’s USB setup, choose a pin, understand preview versus device actions, and use Stop/reset. Includes Mac preview compatibility and reset limitations.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 0,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 18,
+      "externalLinks": 6,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 580,
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "path": "/guides/routes-and-gpx",
+      "file": "guides/routes-and-gpx.html",
+      "title": "Plan Routes and Import GPX Tracks | Estera Guide",
+      "titleLength": 48,
+      "metaDescription": "Plan walking, cycling, and driving routes in Estera. Learn route preview, stops, saved journeys, GPX limits, recorded timing, and what the simulation can show.",
+      "metaDescriptionLength": 159,
+      "canonical": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Plan a route. Keep the journey."
+      ],
+      "h2Count": 6,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "Plan Routes and Import GPX Tracks | Estera Guide",
+      "ogDescription": "Plan walking, cycling, and driving routes in Estera. Learn route preview, stops, saved journeys, GPX limits, recorded timing, and what the simulation can show.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 0,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 18,
+      "externalLinks": 5,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 579,
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "path": "/compatibility",
+      "file": "compatibility.html",
+      "title": "Mac and iPhone Compatibility — Preview Status | Estera",
+      "titleLength": 54,
+      "metaDescription": "Estera targets Apple Silicon, macOS 15+, and iOS 17.4+ over USB. See hardware verification limits, Windows source status, signing, and reset behavior.",
+      "metaDescriptionLength": 150,
+      "canonical": "https://estera-virid.vercel.app/compatibility",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Compatibility and preview status"
+      ],
+      "h2Count": 6,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "Mac and iPhone Compatibility — Preview Status | Estera",
+      "ogDescription": "Estera targets Apple Silicon, macOS 15+, and iOS 17.4+ over USB. See hardware verification limits, Windows source status, signing, and reset behavior.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 0,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 16,
+      "externalLinks": 7,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 533,
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "path": "/privacy",
+      "file": "privacy.html",
+      "title": "Website and Desktop App Privacy | Estera",
+      "titleLength": 40,
+      "metaDescription": "Understand Estera’s browser demo, optional analytics, local saved journeys, USB device control, and requests to map and developer-file providers.",
+      "metaDescriptionLength": 145,
+      "canonical": "https://estera-virid.vercel.app/privacy",
+      "robotsMeta": [
+        "index",
+        "follow",
+        "max-image-preview:large"
+      ],
+      "googlebotMeta": [],
+      "viewport": "width=device-width, initial-scale=1.0",
+      "lang": "en",
+      "charset": "UTF-8",
+      "h1Count": 1,
+      "h1s": [
+        "Privacy, on the website and in the app"
+      ],
+      "h2Count": 7,
+      "jsonLdBlocks": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "jsonLdErrors": [],
+      "hreflang": [],
+      "hreflangRelative": 0,
+      "ogTitle": "Website and Desktop App Privacy | Estera",
+      "ogDescription": "Understand Estera’s browser demo, optional analytics, local saved journeys, USB device control, and requests to map and developer-file providers.",
+      "ogImage": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "imageCount": 0,
+      "imagesMissingAlt": [],
+      "linkClassification": "by hostname",
+      "internalLinks": 16,
+      "externalLinks": 6,
+      "unclassifiedLinks": 0,
+      "nofollowLinks": 0,
+      "scriptOnlyLinks": 0,
+      "anchorsWithoutHref": 0,
+      "scriptAnchorsWithoutHref": 0,
+      "wordCount": 577,
+      "warnings": [],
+      "notes": []
+    }
+  ],
+  "robots": {
+    "groups": [
+      {
+        "agents": [
+          "*"
+        ],
+        "purpose": "generic",
+        "rules": 1
+      }
+    ],
+    "sitemaps": [
+      "https://estera-virid.vercel.app/sitemap.xml"
+    ],
+    "notes": []
+  }
+}

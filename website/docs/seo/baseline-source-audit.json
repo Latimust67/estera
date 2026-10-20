@@ -1,0 +1,41 @@
+{
+  "file": "website/index.html",
+  "title": "Estera — Your iPhone. Somewhere else.",
+  "titleLength": 37,
+  "metaDescription": "Estera is a free, open-source desktop app for simulating your iPhone’s location from your Mac. Download the Apple Silicon macOS 15+ prerelease and explore the source on GitHub.",
+  "metaDescriptionLength": 176,
+  "canonical": null,
+  "robotsMeta": [],
+  "googlebotMeta": [],
+  "viewport": "width=device-width, initial-scale=1.0",
+  "lang": "en",
+  "charset": "UTF-8",
+  "h1Count": 1,
+  "h1s": [
+    "Estera. Your iPhone, somewhere else."
+  ],
+  "h2Count": 1,
+  "jsonLdBlocks": 0,
+  "jsonLdTypes": [],
+  "jsonLdErrors": [],
+  "hreflang": [],
+  "hreflangRelative": 0,
+  "ogTitle": "Estera — Your iPhone. Somewhere else.",
+  "ogDescription": "One free, open-source desktop app. Simulate a location or a whole journey on your iPhone from your Mac. Apple Silicon · macOS 15+ · Prerelease.",
+  "ogImage": null,
+  "imageCount": 0,
+  "imagesMissingAlt": [],
+  "linkClassification": "unknown (pass --base to classify internal vs external)",
+  "internalLinks": 0,
+  "externalLinks": 0,
+  "unclassifiedLinks": 3,
+  "nofollowLinks": 0,
+  "scriptOnlyLinks": 0,
+  "anchorsWithoutHref": 0,
+  "scriptAnchorsWithoutHref": 0,
+  "wordCount": 139,
+  "warnings": [
+    "No rel=canonical. Add a self-referencing canonical on the preferred URL (Guide 2)."
+  ],
+  "notes": []
+}

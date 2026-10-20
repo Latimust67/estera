@@ -13,10 +13,11 @@ const destinations = [
 ];
 
 function useMotionPreference() {
-  const [reduced, setReduced] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [reduced, setReduced] = useState(false);
   useEffect(() => {
     const query = window.matchMedia('(prefers-reduced-motion: reduce)');
     const change = () => setReduced(query.matches);
+    change();
     query.addEventListener('change', change);
     return () => query.removeEventListener('change', change);
   }, []);
@@ -53,9 +54,9 @@ function ReleaseDialog({ open, close }: { open: boolean; close: () => void }) {
     <span className="dialog-symbol"><Ghost size={36} strokeWidth={1.3}/></span>
     <span className="eyebrow">YOUR NEXT DESTINATION</span><h2 id="release-title">Estera for Mac<span>.</span></h2>
     <p>One free desktop app. Pins, routes, and the whole journey. Open source under the GPL.</p>
-    <div className="release-state"><span className="status-dot"/><div><strong>v{RELEASE_VERSION} prerelease · Apple Silicon · macOS 15+</strong><p>This early release is not signed with a Developer ID or notarized by Apple. Read the release notes before installing.</p></div></div>
+    <div className="release-state"><span className="status-dot"/><div><strong>v{RELEASE_VERSION} prerelease · Apple Silicon · macOS 15+</strong><p>This early release is not signed with a Developer ID or notarized by Apple. Physical iPhone location set/reset and clean-machine installation remain unverified. Read the release notes before installing.</p></div></div>
     <ol className="install-steps"><li>Download and unzip the file.</li><li>Drag Estera into Applications, then open it.</li><li>If macOS blocks it, go to System Settings → Privacy &amp; Security and choose Open Anyway for Estera, only if you trust this download.</li><li>Connect your iPhone by USB and follow the app’s setup steps.</li></ol>
-    <a href={DOWNLOAD_URL} className="button button-primary">Download for Mac <ArrowDownToLine size={17}/></a>
+    <a href={DOWNLOAD_URL} data-download="mac" className="button button-primary">Download for Mac <ArrowDownToLine size={17}/></a>
     <div className="release-links"><a href={RELEASE_URL}>Release notes <ArrowUpRight size={14}/></a><a href={GITHUB_URL}>Star on GitHub <Star size={14}/></a></div>
     <p className="release-support">Enjoy Estera? A star helps others find it. Starring is optional; no GitHub account is needed to download. Windows is a source-only preview.</p>
   </dialog>;
@@ -88,17 +89,17 @@ export default function App() {
     <div id="top"/>
     <header className="site-header wrap"><Brand/>
       <nav id="navigation" aria-label="Main navigation" className={menuOpen ? 'navigation is-open' : 'navigation'}>
-        <a href="#experience" onClick={() => setMenuOpen(false)}>The experience</a><a href="#editions" onClick={() => setMenuOpen(false)}>One free app</a><a href="#questions" onClick={() => setMenuOpen(false)}>Good to know</a>
+        <a href="#experience" onClick={() => setMenuOpen(false)}>The experience</a><a href="#editions" onClick={() => setMenuOpen(false)}>One free app</a><a href="/guides/iphone-location-simulation">Setup guide</a>
       </nav>
       <div className="header-actions"><a className="button button-secondary button-small" href={GITHUB_URL}>GitHub <ArrowUpRight size={16}/></a><button className="icon-button mobile-menu" aria-expanded={menuOpen} aria-controls="navigation" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={22}/> : <Menu size={22}/>}</button></div>
     </header>
     <main id="main">
       <section className="hero" id="atlas-hero" aria-labelledby="hero-title">
         <div className="hero-stage"><div className="hero-grid wrap">
-          <div className="hero-copy"><div className="eyebrow hero-eyebrow"><span className="status-dot"/>LOCATION, ON YOUR TERMS</div>
+          <div className="hero-copy"><div className="eyebrow hero-eyebrow"><span className="status-dot"/>FREE IPHONE LOCATION SIMULATOR FOR MAC</div>
             <h1 id="hero-title">Your iPhone.<br/>Somewhere<br/><em>else.</em><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
-            <p>A little freedom to be anywhere.<br/>Simulate your iPhone’s location from your Mac.<br/>One free, open-source desktop app.</p>
-            <div className="hero-actions"><button type="button" className="button button-primary" onClick={() => setReleaseOpen(true)}>Download for Mac <ArrowDownToLine size={18}/></button><a className="text-link" href="#preview">Take a test drive <ArrowRight size={16}/></a></div>
+            <p>A little freedom to be anywhere.<br/>Simulate your iPhone’s location from your Mac over USB.<br/>One free, open-source desktop app.</p>
+            <div className="hero-actions"><a href="/download" className="button button-primary" onClick={event => { if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); setReleaseOpen(true); } }}>Download for Mac <ArrowDownToLine size={18}/></a><a className="text-link" href="#preview">Take a test drive <ArrowRight size={16}/></a></div>
             <span className="hero-note"><Monitor size={13}/> Apple Silicon · macOS 15+ · Prerelease</span>
           </div>
           <div className="hero-globe">
@@ -132,19 +133,20 @@ export default function App() {
         <div className="editions-heading"><h2 id="editions-title">Start with a pin.<br/><em>See where it takes you.</em></h2><span className="editions-seal"><Ghost size={34} strokeWidth={1.2}/><span>A LITTLE MORE<br/>FREEDOM.</span></span></div>
         <div className="edition-grid" data-scroll-scene="editions">
           <article className="edition-card open-card"><div className="edition-card-heading"><div className="edition-name"><h3>Pin<span>.</span></h3><span className="edition-badge"><Code2 size={13}/> OPEN SOURCE</span></div><p>One place. Endless possibilities.</p></div><EditionArtwork/>
-            <div className="edition-card-body"><div className="edition-price"><strong>Free to explore.</strong><span>The essentials, beautifully simple.</span></div><ul><li><Check size={15}/> Set a location anywhere</li><li><Check size={15}/> Search places and coordinates</li><li><Check size={15}/> Simple location controls</li><li><Check size={15}/> Open-source code</li></ul><button type="button" className="button button-dark" onClick={() => setReleaseOpen(true)}>Download Estera <ArrowDownToLine size={17}/></button><small>macOS 15+ · Apple Silicon · Prerelease</small></div>
+            <div className="edition-card-body"><div className="edition-price"><strong>Free to explore.</strong><span>The essentials, beautifully simple.</span></div><ul><li><Check size={15}/> Set a location anywhere</li><li><Check size={15}/> Search places and coordinates</li><li><Check size={15}/> Simple location controls</li><li><Check size={15}/> Open-source code</li></ul><a href="/download" className="button button-dark" onClick={event => { if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); setReleaseOpen(true); } }}>Download Estera <ArrowDownToLine size={17}/></a><small>macOS 15+ · Apple Silicon · Prerelease</small></div>
           </article>
           <article className="edition-card pro-card"><div className="edition-card-heading"><div className="edition-name"><h3>Journey<span>.</span></h3><span className="edition-badge"><Route size={13}/> INCLUDED FREE</span></div><p>For everything between here and there.</p></div><EditionArtwork pro/>
             <div className="edition-card-body"><div className="edition-price"><strong>Go a little further.</strong><span>More control. More ways to move.</span></div><ul><li><Check size={15}/> All the location essentials</li><li><Check size={15}/> Walking, cycling, and driving</li><li><Check size={15}/> Multiple stops, speed, and playback</li><li><Check size={15}/> Saved journeys and GPX files</li></ul><a className="button button-primary" href={GITHUB_URL}>Star on GitHub <Star size={17}/></a><small>A little support. Always optional.</small></div>
           </article>
-        </div><p className="edition-footnote">Every feature above is part of the same free app. No subscription or GitHub account required.<br/>The macOS prerelease is not Developer ID signed or notarized. Windows is a source-only preview.</p>
+        </div><p className="edition-footnote">Every feature above is part of the same free app. No subscription or GitHub account required.<br/>The macOS prerelease is not Developer ID signed or notarized. Windows is a source-only preview.<br/>Physical iPhone location set/reset and clean-machine installation remain unverified. <a href="/compatibility">Read compatibility and limitations</a>.</p>
       </div></section>
 
       <section className="faq-section wrap" id="questions" aria-labelledby="faq-title"><div className="faq-intro"><SectionLabel number="04">BEFORE YOU GO</SectionLabel><h2 id="faq-title">A few good<br/><em>questions.</em></h2><p>A little clarity for the road ahead.</p><Compass size={63} strokeWidth={.7} aria-hidden="true"/></div><div className="faq-list">{questions.map(([question, answer], index) => <details key={question}><summary><span className="faq-number">0{index + 1}</span><span>{question}</span><ChevronDown size={19}/></summary><p>{answer}</p></details>)}</div></section>
 
+      <section className="guide-directory wrap" aria-labelledby="guides-title"><h2 id="guides-title">Set up Estera. Plan your first journey.</h2><p>Start with the Mac download and USB setup guide. Learn how pins, route controls and GPX files work, and check the preview’s current requirements before connecting your iPhone.</p><nav aria-label="Estera guides"><a href="/download">Download and install for Mac</a><a href="/guides/iphone-location-simulation">iPhone location setup guide</a><a href="/guides/routes-and-gpx">Routes, playback and GPX</a><a href="/compatibility">Compatibility and limitations</a></nav><p>Updated <time dateTime="2026-10-20">October 20, 2026</time> · <a href={GITHUB_URL}>Estera project</a></p></section>
       <JourneyEnd destinations={destinations} destination={destination} onDestinationChange={setDestination}/>
     </main>
-    <AtlasFooter onRelease={() => setReleaseOpen(true)}/>
+    <AtlasFooter/>
     <ReleaseDialog open={releaseOpen} close={() => setReleaseOpen(false)}/>
   </>;
 }

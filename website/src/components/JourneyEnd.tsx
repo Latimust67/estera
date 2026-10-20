@@ -18,7 +18,7 @@ export default function JourneyEnd({ destinations, destination, onDestinationCha
       </svg>
       <div className="end-heading-row wrap"><span className="eyebrow"><span className="status-dot"/> YOUR NEXT CHAPTER</span><span className="end-top-note">NO TICKET REQUIRED.</span></div>
       <div className="end-layout wrap">
-        <div className="end-copy"><h2 id="closing-title">Where to<br/><em>next?</em><span className="end-star" aria-hidden="true">✳</span></h2><p>A familiar corner. A completely new world.<br/>Your next place is only a pin away.</p><a className="button button-primary" href="#editions">Get the free desktop app <ArrowUpRight size={19}/></a><span className="end-platform"><Monitor size={13}/> Your Mac. Your iPhone. Your move.</span></div>
+        <div className="end-copy"><h2 id="closing-title">Where to<br/><em>next?</em><span className="end-star" aria-hidden="true">✳</span></h2><p>A familiar corner. A completely new world.<br/>Your next place is only a pin away.</p><a className="button button-primary" href="/download">Get the free desktop app <ArrowUpRight size={19}/></a><span className="end-platform"><Monitor size={13}/> Your Mac. Your iPhone. Your move.</span></div>
         <div className="end-destination">
           <div className="end-ticket">
             <div className="end-ticket-top"><span><Ghost size={19} strokeWidth={1.5}/> estera.</span><Compass size={21} strokeWidth={1.1}/></div>
@@ -32,13 +32,13 @@ export default function JourneyEnd({ destinations, destination, onDestinationCha
     </section>;
 }
 
-export function AtlasFooter({ onRelease }: { onRelease: () => void }) {
+export function AtlasFooter() {
   return <footer className="atlas-footer"><div className="wrap">
       <div className="footer-directory">
         <div className="footer-identity"><a className="brand" href="#top" aria-label="Estera home"><Ghost size={29} strokeWidth={1.6}/><span>estera<span className="brand-period">.</span></span></a><p>A little more freedom<br/>to be somewhere else.</p><a href={RELEASE_URL} className="footer-release-note"><span className="status-dot"/> v{RELEASE_VERSION} · macOS prerelease</a></div>
         <nav className="footer-link-column" aria-label="Explore Estera"><h2>EXPLORE</h2><a href="#experience">The experience</a><a href="#preview">Take a test drive</a><a href="#atlas-hero">Explore the globe <ArrowUpRight size={13}/></a></nav>
-        <nav className="footer-link-column" aria-label="Download and support Estera"><h2>GET ESTERA</h2><button type="button" onClick={onRelease}>Download for Mac <ArrowUpRight size={13}/></button><a href={GITHUB_URL}>Star on GitHub <ArrowUpRight size={13}/></a><a href={RELEASE_URL}>Release notes</a><a href={`${GITHUB_URL}/blob/main/LICENSE`}>Open-source license</a></nav>
-        <div className="footer-link-column footer-made-for"><h2>GOOD TO KNOW</h2><a href="#questions">Questions & answers</a><p>Made for Mac.<br/>Connected to your iPhone.</p><a className="footer-back" href="#top">Back to the top <ArrowUpRight size={14}/></a></div>
+        <nav className="footer-link-column" aria-label="Download and support Estera"><h2>GET ESTERA</h2><a href="/download">Download for Mac <ArrowUpRight size={13}/></a><a href={GITHUB_URL}>Star on GitHub <ArrowUpRight size={13}/></a><a href={RELEASE_URL}>Release notes</a><a href={`${GITHUB_URL}/blob/main/LICENSE`}>Open-source license</a></nav>
+        <div className="footer-link-column footer-made-for"><h2>GOOD TO KNOW</h2><a href="#questions">Questions & answers</a><a href="/guides/iphone-location-simulation">iPhone setup guide</a><a href="/guides/routes-and-gpx">Routes and GPX</a><a href="/compatibility">Compatibility</a><a href="/privacy">Privacy & analytics choices</a><p>Made for Mac.<br/>Connected to your iPhone.</p><a className="footer-back" href="#top">Back to the top <ArrowUpRight size={14}/></a></div>
       </div>
       <div className="footer-wordmark" aria-hidden="true">estera<span>.</span><span className="footer-wordmark-symbol"><Ghost strokeWidth={.8}/></span></div>
       <div className="footer-colophon"><span>© {new Date().getFullYear()} Estera</span><span>BE HERE. GO ANYWHERE.</span><span><span className="footer-cross">+</span> A DIFFERENT POINT OF VIEW.</span></div>
