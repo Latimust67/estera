@@ -20,6 +20,20 @@ function command(_name: string, ..._values: unknown[]) {
 function optedIn() {
   try { return localStorage.getItem(preferenceKey) === 'granted'; } catch { return false; }
 }
+function deactivate(reload = true) {
+  const wasActive = active;
+  active = false;
+  (window as unknown as Record<string, unknown>)[`ga-disable-${measurementId}`] = true;
+  for (const cookie of document.cookie.split(';')) {
+    const name = cookie.split('=')[0].trim();
+    if (!/^_ga(?:_|$)/.test(name)) continue;
+    for (const domain of ['', `; Domain=${location.hostname}`, `; Domain=.${location.hostname}`]) {
+      document.cookie = `${name}=; Max-Age=0; Path=/${domain}; SameSite=Lax; Secure`;
+    }
+  }
+  // Also unload Google's automatic events, including in other opted-in tabs.
+  if (wasActive && reload) location.reload();
+}
 function safeReferrer() {
   try { return new URL(document.referrer).origin; } catch { return ''; }
 }
@@ -79,6 +93,17 @@ function activate() {
 export function initializeAnalytics(path: string) {
   currentPath = path;
   if (!configured || location.origin !== SITE_URL || !knownPaths.has(path) || location.pathname !== path) return;
+  const syncWithdrawal = () => {
+    if (active && !optedIn()) deactivate();
+  };
+  window.addEventListener('storage', event => {
+    if (event.key === preferenceKey || event.key === null) syncWithdrawal();
+  });
+  // A suspended or cached tab may only learn about withdrawal when it resumes.
+  window.addEventListener('pageshow', syncWithdrawal);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') syncWithdrawal();
+  });
   if (optedIn()) activate();
   // One listener, one event per actual ZIP-link click. Dialog opens do not count.
   document.addEventListener('click', event => {
@@ -93,34 +118,38 @@ export function AnalyticsPreferences() {
   const [allowed, setAllowed] = useState(false);
   const [message, setMessage] = useState('Analytics are off unless you choose to allow them.');
   useEffect(() => {
-    const granted = optedIn();
-    setAllowed(granted);
-    if (granted) setMessage('You have allowed optional analytics in this browser.');
+    const syncPreference = () => {
+      const granted = optedIn();
+      setAllowed(granted);
+      setMessage(granted ? 'You have allowed optional analytics in this browser.' : 'Optional analytics are off.');
+    };
+    syncPreference();
+    window.addEventListener('storage', syncPreference);
+    return () => window.removeEventListener('storage', syncPreference);
   }, []);
   function choose(granted: boolean) {
-    try { localStorage.setItem(preferenceKey, granted ? 'granted' : 'denied'); } catch {
-      setMessage('Your browser could not save this preference. Analytics remain off.');
-      return;
-    }
-    setAllowed(granted);
-    if (granted) {
-      activate();
-      setMessage('Optional analytics allowed. You can turn them off here at any time.');
-    } else {
+    if (!granted) {
       const wasActive = active;
-      active = false;
-      (window as unknown as Record<string, unknown>)[`ga-disable-${measurementId}`] = true;
-      for (const cookie of document.cookie.split(';')) {
-        const name = cookie.split('=')[0].trim();
-        if (!/^_ga(?:_|$)/.test(name)) continue;
-        for (const domain of ['', `; Domain=${location.hostname}`, `; Domain=.${location.hostname}`]) {
-          document.cookie = `${name}=; Max-Age=0; Path=/${domain}; SameSite=Lax; Secure`;
-        }
+      // Stop immediately, even if the browser refuses to persist this choice.
+      deactivate(false);
+      setAllowed(false);
+      try { localStorage.setItem(preferenceKey, 'denied'); } catch {
+        setMessage('Analytics are off in this tab, but your browser could not save the choice. Clear this site’s stored data before opening another page.');
+        return;
       }
       setMessage('Optional analytics are off.');
-      // Unload the previously consented third-party library after withdrawal.
       if (wasActive) location.reload();
+      return;
     }
+    try { localStorage.setItem(preferenceKey, 'granted'); } catch {
+      deactivate(false);
+      setAllowed(false);
+      setMessage('Your browser could not save this preference. Analytics are off in this tab.');
+      return;
+    }
+    setAllowed(true);
+    activate();
+    setMessage('Optional analytics allowed. You can turn them off here at any time.');
   }
   return <section className="analytics-preferences" id="analytics-preferences" aria-labelledby="analytics-title">
     <h2 id="analytics-title">Your analytics choice</h2>

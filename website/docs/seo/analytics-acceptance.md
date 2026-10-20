@@ -35,3 +35,7 @@ The first harness stopped after two accepted page views because “Tokyo” matc
 The main task inspected the correct Estera GA property after collection was sent. Realtime still showed **0 active users** and **“No data available”** after bounded observation and one refresh; see [google-analytics-realtime-pending.png](evidence/google-analytics-realtime-pending.png). No more test traffic or dashboard polling was performed to force a result.
 
 HTTP 204 establishes endpoint receipt, not successful processing or appearance in Realtime, DebugView, aggregate reports, or key-event reports. The main task added an aggregate-report check to the next-day monitoring follow-up. Provider-visible processing, plus genuine CLS/INP delivery when available, remain the outstanding measurement evidence.
+
+## Follow-up source regression: cross-tab withdrawal
+
+The fresh review identified scenarios absent from the live run above: other already-open documents and failed preference writes. The correction and five passing offline source-regression cases are recorded in [review-fixes.md](review-fixes.md). The original single-tab live result must not be treated as cross-tab browser evidence. No additional Google traffic or browser run was performed for this correction.

@@ -80,6 +80,8 @@ The original production build and six-page saved-HTML audit passed; the report i
 | No personal data in custom event values/URLs; redaction configured. | Pass for inspected payloads | Focused production checks passed query/fragment/referrer stripping, no Google requests before opt-in, and withdrawal with no subsequent collection plus cleared GA cookies. Account email/25-key redaction is saved and advertising features are off. See [analytics-acceptance.md](analytics-acceptance.md) for exact coverage and lifecycle-request limits. Standard Google browser/network collection after consent is disclosed; this is not a claim of anonymous telemetry. |
 | Search Console and outcome baseline for comparable periods. | Pending search processing | Google overview reports are processing; three priority URLs are discovered but not yet indexed. There is no comparable traffic/outcome dataset. Record unavailable data separately from zero traffic and compare like periods once available. |
 
+| Provider-side hostname Include filter configured and validated. | Partial | **Estera production hostname** uses Include only and an exact match for `estera-virid.vercel.app`, saved in **Testing**. Validate matching data after 24–36 hours before activation; it is not yet actively filtering. See [account-setup.md](account-setup.md). |
+
 ## H. Post-launch: first 14 days
 
 Publication was **2026-10-20**. The dates below use days elapsed from publication: Day 1 **October 21**, Day 3 **October 23**, Day 7 **October 27**, and Day 14 **November 3, 2026**. The ACTIVE `estera-seo-launch-follow-up` automation runs daily at 9:00 a.m. America/Los_Angeles for 14 runs, prioritizes these checkpoints, and stays quiet when unchanged. Scheduling does not complete future observations.
