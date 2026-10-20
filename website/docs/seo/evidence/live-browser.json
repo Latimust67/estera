@@ -1,0 +1,831 @@
+{
+  "checkedAt": "2026-10-20T22:30:35.377Z",
+  "engine": "Chromium headless shell; one isolated browser; Mac Metal GPU flags; no throttling",
+  "viewports": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Your iPhone.\nSomewhere\nelse.✳"
+      ],
+      "title": "Estera — Free iPhone Location Simulator for Mac",
+      "mainTextLength": 4467,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "The experience",
+          "href": "#experience",
+          "visible": true
+        },
+        {
+          "text": "One free app",
+          "href": "#editions",
+          "visible": true
+        },
+        {
+          "text": "Setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0.000006334997106481481,
+        "lcp": 672,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 392,
+          "navigationId": 634,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 0.2000000011175871,
+          "domainLookupStart": 3.600000001490116,
+          "domainLookupEnd": 5.600000001490116,
+          "connectStart": 5.600000001490116,
+          "secureConnectionStart": 25.800000000745058,
+          "connectEnd": 73.70000000111759,
+          "requestStart": 74,
+          "responseStart": 100.10000000149012,
+          "firstInterimResponseStart": 100.10000000149012,
+          "finalResponseHeadersStart": 125.90000000037253,
+          "responseEnd": 128.5,
+          "transferSize": 12023,
+          "encodedBodySize": 11723,
+          "decodedBodySize": 69093,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 0,
+          "unloadEventEnd": 0,
+          "domInteractive": 149,
+          "domContentLoadedEventStart": 391.90000000037253,
+          "domContentLoadedEventEnd": 391.90000000037253,
+          "domComplete": 392,
+          "loadEventStart": 392,
+          "loadEventEnd": 392,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "low"
+          }
+        }
+      },
+      "overflowing": [
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -54.87898254394531,
+          "right": 1494.8790740966797
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -166.88510131835938,
+          "right": 1606.8851623535156
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -278.8912048339844,
+          "right": 1718.8911437988281
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -390.8973388671875,
+          "right": 1830.8973388671875
+        }
+      ]
+    },
+    {
+      "route": "/download",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Download Estera for Mac"
+      ],
+      "title": "Download Estera for Mac — Free iPhone Location Simulator",
+      "mainTextLength": 2690,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 116,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/download",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 98.90000000037253,
+          "navigationId": 1436,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 0,
+          "domainLookupStart": 0,
+          "domainLookupEnd": 0,
+          "connectStart": 0,
+          "secureConnectionStart": 0,
+          "connectEnd": 0,
+          "requestStart": 0.5,
+          "responseStart": 22.700000001117587,
+          "firstInterimResponseStart": 22.700000001117587,
+          "finalResponseHeadersStart": 29.40000000037253,
+          "responseEnd": 29.700000001117587,
+          "transferSize": 3656,
+          "encodedBodySize": 3356,
+          "decodedBodySize": 10340,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 30.90000000037253,
+          "unloadEventEnd": 30.90000000037253,
+          "domInteractive": 33.90000000037253,
+          "domContentLoadedEventStart": 98.30000000074506,
+          "domContentLoadedEventEnd": 98.30000000074506,
+          "domComplete": 98.90000000037253,
+          "loadEventStart": 98.90000000037253,
+          "loadEventEnd": 98.90000000037253,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        }
+      },
+      "overflowing": []
+    },
+    {
+      "route": "/guides/iphone-location-simulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Your first iPhone location simulation"
+      ],
+      "title": "iPhone Location Simulation Guide for Mac | Estera",
+      "mainTextLength": 3397,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 108,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 94.09999999962747,
+          "navigationId": 2725,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 0.09999999962747097,
+          "domainLookupStart": 0.09999999962747097,
+          "domainLookupEnd": 0.09999999962747097,
+          "connectStart": 0.09999999962747097,
+          "secureConnectionStart": 0.09999999962747097,
+          "connectEnd": 0.09999999962747097,
+          "requestStart": 0.40000000037252903,
+          "responseStart": 36,
+          "firstInterimResponseStart": 36,
+          "finalResponseHeadersStart": 59.70000000111759,
+          "responseEnd": 60,
+          "transferSize": 3866,
+          "encodedBodySize": 3566,
+          "decodedBodySize": 10866,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 61.09999999962747,
+          "unloadEventEnd": 61.09999999962747,
+          "domInteractive": 64.20000000111759,
+          "domContentLoadedEventStart": 93.40000000037253,
+          "domContentLoadedEventEnd": 93.40000000037253,
+          "domComplete": 94.09999999962747,
+          "loadEventStart": 94.09999999962747,
+          "loadEventEnd": 94.09999999962747,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        }
+      },
+      "overflowing": []
+    },
+    {
+      "route": "/guides/routes-and-gpx",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Plan a route. Keep the journey."
+      ],
+      "title": "Plan Routes and Import GPX Tracks | Estera Guide",
+      "mainTextLength": 3277,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 96,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 85.19999999925494,
+          "navigationId": 4663,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 0.09999999962747097,
+          "domainLookupStart": 0.09999999962747097,
+          "domainLookupEnd": 0.09999999962747097,
+          "connectStart": 0.09999999962747097,
+          "secureConnectionStart": 0.09999999962747097,
+          "connectEnd": 0.09999999962747097,
+          "requestStart": 0.5,
+          "responseStart": 22.800000000745058,
+          "firstInterimResponseStart": 22.800000000745058,
+          "finalResponseHeadersStart": 50.19999999925494,
+          "responseEnd": 50.40000000037253,
+          "transferSize": 3919,
+          "encodedBodySize": 3619,
+          "decodedBodySize": 10634,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 52,
+          "unloadEventEnd": 52,
+          "domInteractive": 54.09999999962747,
+          "domContentLoadedEventStart": 84.69999999925494,
+          "domContentLoadedEventEnd": 84.69999999925494,
+          "domComplete": 85.19999999925494,
+          "loadEventStart": 85.19999999925494,
+          "loadEventEnd": 85.19999999925494,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        }
+      },
+      "overflowing": []
+    },
+    {
+      "route": "/compatibility",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Compatibility and preview status"
+      ],
+      "title": "Mac and iPhone Compatibility — Preview Status | Estera",
+      "mainTextLength": 3339,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 84,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/compatibility",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 78.70000000111759,
+          "navigationId": 1594,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 0.2000000011175871,
+          "domainLookupStart": 0.2000000011175871,
+          "domainLookupEnd": 0.2000000011175871,
+          "connectStart": 0.2000000011175871,
+          "secureConnectionStart": 0.2000000011175871,
+          "connectEnd": 0.2000000011175871,
+          "requestStart": 0.7000000011175871,
+          "responseStart": 27.40000000037253,
+          "firstInterimResponseStart": 27.40000000037253,
+          "finalResponseHeadersStart": 31.40000000037253,
+          "responseEnd": 31.700000001117587,
+          "transferSize": 3892,
+          "encodedBodySize": 3592,
+          "decodedBodySize": 10651,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 33.80000000074506,
+          "unloadEventEnd": 33.80000000074506,
+          "domInteractive": 37.20000000111759,
+          "domContentLoadedEventStart": 78.60000000149012,
+          "domContentLoadedEventEnd": 78.60000000149012,
+          "domComplete": 78.70000000111759,
+          "loadEventStart": 78.70000000111759,
+          "loadEventEnd": 78.70000000111759,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "low"
+          }
+        }
+      },
+      "overflowing": []
+    },
+    {
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1": [
+        "Privacy, on the website and in the app"
+      ],
+      "title": "Website and Desktop App Privacy | Estera",
+      "mainTextLength": 3517,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 124,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/privacy",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 115.69999999925494,
+          "navigationId": 5450,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 2.099999999627471,
+          "domainLookupStart": 2.099999999627471,
+          "domainLookupEnd": 2.099999999627471,
+          "connectStart": 2.099999999627471,
+          "secureConnectionStart": 2.099999999627471,
+          "connectEnd": 2.099999999627471,
+          "requestStart": 2.799999998882413,
+          "responseStart": 71.79999999888241,
+          "firstInterimResponseStart": 71.79999999888241,
+          "finalResponseHeadersStart": 72.39999999850988,
+          "responseEnd": 72.69999999925494,
+          "transferSize": 3874,
+          "encodedBodySize": 3574,
+          "decodedBodySize": 10754,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 74.89999999850988,
+          "unloadEventEnd": 74.89999999850988,
+          "domInteractive": 78.39999999850988,
+          "domContentLoadedEventStart": 114.39999999850988,
+          "domContentLoadedEventEnd": 114.5,
+          "domComplete": 115.69999999925494,
+          "loadEventStart": 115.69999999925494,
+          "loadEventEnd": 115.69999999925494,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        }
+      },
+      "overflowing": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Your iPhone.\nSomewhere\nelse."
+      ],
+      "title": "Estera — Free iPhone Location Simulator for Mac",
+      "mainTextLength": 4394,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "The experience",
+          "href": "#experience",
+          "visible": false
+        },
+        {
+          "text": "One free app",
+          "href": "#editions",
+          "visible": false
+        },
+        {
+          "text": "Setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": false
+        }
+      ],
+      "lab": {
+        "cls": 0,
+        "lcp": 76,
+        "navigation": {
+          "name": "https://estera-virid.vercel.app/",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 67.59999999962747,
+          "navigationId": 2322,
+          "initiatorType": "navigation",
+          "deliveryType": "cache",
+          "nextHopProtocol": "h2",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "br",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 3,
+          "domainLookupStart": 3,
+          "domainLookupEnd": 3,
+          "connectStart": 3,
+          "secureConnectionStart": 3,
+          "connectEnd": 3,
+          "requestStart": 3.5,
+          "responseStart": 23.5,
+          "firstInterimResponseStart": 23.5,
+          "finalResponseHeadersStart": 26.59999999962747,
+          "responseEnd": 27,
+          "transferSize": 300,
+          "encodedBodySize": 11723,
+          "decodedBodySize": 69093,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 28.5,
+          "unloadEventEnd": 28.5,
+          "domInteractive": 32,
+          "domContentLoadedEventStart": 62.5,
+          "domContentLoadedEventEnd": 62.5,
+          "domComplete": 67.59999999962747,
+          "loadEventStart": 67.59999999962747,
+          "loadEventEnd": 67.59999999962747,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        }
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "class": "hero-globe",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "DIV",
+          "class": "ag-atlas ag-atlas--ready",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "IMG",
+          "class": "ag-atlas__fallback",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "CANVAS",
+          "class": "ag-atlas__canvas",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "DIV",
+          "class": "destination-readout",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "DIV",
+          "class": "destination-switch",
+          "left": 20,
+          "right": 394
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -200.6436309814453,
+          "right": 590.6436004638672
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -336.2222595214844,
+          "right": 726.2223205566406
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -471.80096435546875,
+          "right": 861.8010864257812
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -607.379638671875,
+          "right": 997.379638671875
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -742.9583129882812,
+          "right": 1132.9584350585938
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -878.5369873046875,
+          "right": 1268.5369873046875
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -1014.1156616210938,
+          "right": 1404.1155395507812
+        },
+        {
+          "tag": "ellipse",
+          "class": {},
+          "left": -1149.6943359375,
+          "right": 1539.6943359375
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "analyticsRequests": [],
+  "failedRequests": [],
+  "interactions": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scenario": "Download keyboard open/focus/tab trap",
+      "passed": false,
+      "focusedInside": true,
+      "tabsStayedInside": false,
+      "horizontalFits": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scenario": "Download Escape closes and restores focus",
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scenario": "Download close button works by keyboard",
+      "passed": true
+    }
+  ],
+  "noJavaScript": [],
+  "browserVersion": "153.0.8010.12",
+  "fatalError": {
+    "message": "locator.getAttribute: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation', exact: true })\u001b[22m\n",
+    "stack": "locator.getAttribute: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation', exact: true })\u001b[22m\n\n    at /private/tmp/estera-live-browser.cjs:37:106"
+  },
+  "finishedAt": "2026-10-20T22:31:12.253Z"
+}

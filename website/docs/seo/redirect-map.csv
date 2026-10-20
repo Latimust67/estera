@@ -1,8 +1,8 @@
 old_path,new_path,status,implementation,live_status
-/index.html,/,308,Vercel cleanUrls,Not checked after publication
-/download.html,/download,308,Vercel cleanUrls,Not checked after publication
-/guides/iphone-location-simulation.html,/guides/iphone-location-simulation,308,Vercel cleanUrls,Not checked after publication
-/guides/routes-and-gpx.html,/guides/routes-and-gpx,308,Vercel cleanUrls,Not checked after publication
-/compatibility.html,/compatibility,308,Vercel cleanUrls,Not checked after publication
-/privacy.html,/privacy,308,Vercel cleanUrls,Not checked after publication
-"Any existing non-root page with a trailing slash","Same path without trailing slash",308,Vercel trailingSlash false,Not checked after publication
+/index.html,/,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+/download.html,/download,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+/guides/iphone-location-simulation.html,/guides/iphone-location-simulation,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+/guides/routes-and-gpx.html,/guides/routes-and-gpx,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+/compatibility.html,/compatibility,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+/privacy.html,/privacy,308,Vercel cleanUrls,Pass2026-10-20: observed one308 to target; see evidence/live-http.json
+"Any existing non-root page with a trailing slash","Same path without trailing slash",308,Vercel trailingSlash false,Pass2026-10-20: observed one308 to target; see evidence/live-http.json

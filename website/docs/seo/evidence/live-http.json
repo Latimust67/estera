@@ -1,0 +1,613 @@
+{
+  "checkedAt": "2026-10-20T22:29:55.458Z",
+  "origin": "https://estera-virid.vercel.app",
+  "checks": [
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      },
+      "title": "Estera — Free iPhone Location Simulator for Mac",
+      "canonical": "https://estera-virid.vercel.app/",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": true,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": "https://estera-virid.vercel.app/#website",
+                "url": "https://estera-virid.vercel.app/",
+                "name": "Estera",
+                "description": "Simulate iPhone locations and routes with Estera, a free, open-source Mac app. Apple Silicon, macOS 15+ and USB required. Download the preview and read setup guides.",
+                "inLanguage": "en"
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/#webpage",
+                "url": "https://estera-virid.vercel.app/",
+                "name": "Estera — Free iPhone Location Simulator for Mac",
+                "description": "Simulate iPhone locations and routes with Estera, a free, open-source Mac app. Apple Silicon, macOS 15+ and USB required. Download the preview and read setup guides.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/download",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "Download Estera for Mac — Free iPhone Location Simulator",
+      "canonical": "https://estera-virid.vercel.app/download",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": true,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/download#webpage",
+                "url": "https://estera-virid.vercel.app/download",
+                "name": "Download Estera for Mac — Free iPhone Location Simulator",
+                "description": "Download the free Estera Mac preview for Apple Silicon and macOS 15+. Read USB requirements, installation steps, signing details, and current limitations.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20",
+                "breadcrumb": {
+                  "@id": "https://estera-virid.vercel.app/download#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://estera-virid.vercel.app/download#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Estera",
+                    "item": "https://estera-virid.vercel.app/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Download Estera for Mac",
+                    "item": "https://estera-virid.vercel.app/download"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "iPhone Location Simulation Guide for Mac | Estera",
+      "canonical": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": false,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/guides/iphone-location-simulation#webpage",
+                "url": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+                "name": "iPhone Location Simulation Guide for Mac | Estera",
+                "description": "Follow Estera’s USB setup, choose a pin, understand preview versus device actions, and use Stop/reset. Includes Mac preview compatibility and reset limitations.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20",
+                "breadcrumb": {
+                  "@id": "https://estera-virid.vercel.app/guides/iphone-location-simulation#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://estera-virid.vercel.app/guides/iphone-location-simulation#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Estera",
+                    "item": "https://estera-virid.vercel.app/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Your first iPhone location simulation",
+                    "item": "https://estera-virid.vercel.app/guides/iphone-location-simulation"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "Plan Routes and Import GPX Tracks | Estera Guide",
+      "canonical": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": false,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/guides/routes-and-gpx#webpage",
+                "url": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+                "name": "Plan Routes and Import GPX Tracks | Estera Guide",
+                "description": "Plan walking, cycling, and driving routes in Estera. Learn route preview, stops, saved journeys, GPX limits, recorded timing, and what the simulation can show.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20",
+                "breadcrumb": {
+                  "@id": "https://estera-virid.vercel.app/guides/routes-and-gpx#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://estera-virid.vercel.app/guides/routes-and-gpx#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Estera",
+                    "item": "https://estera-virid.vercel.app/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Plan a route. Keep the journey.",
+                    "item": "https://estera-virid.vercel.app/guides/routes-and-gpx"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/compatibility",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "Mac and iPhone Compatibility — Preview Status | Estera",
+      "canonical": "https://estera-virid.vercel.app/compatibility",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": false,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/compatibility#webpage",
+                "url": "https://estera-virid.vercel.app/compatibility",
+                "name": "Mac and iPhone Compatibility — Preview Status | Estera",
+                "description": "Estera targets Apple Silicon, macOS 15+, and iOS 17.4+ over USB. See hardware verification limits, Windows source status, signing, and reset behavior.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20",
+                "breadcrumb": {
+                  "@id": "https://estera-virid.vercel.app/compatibility#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://estera-virid.vercel.app/compatibility#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Estera",
+                    "item": "https://estera-virid.vercel.app/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Compatibility and preview status",
+                    "item": "https://estera-virid.vercel.app/compatibility"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "canonical",
+      "url": "https://estera-virid.vercel.app/privacy",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "Website and Desktop App Privacy | Estera",
+      "canonical": "https://estera-virid.vercel.app/privacy",
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow, max-image-preview:large\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": false,
+      "jsonLd": [
+        {
+          "validJson": true,
+          "value": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://estera-virid.vercel.app/privacy#webpage",
+                "url": "https://estera-virid.vercel.app/privacy",
+                "name": "Website and Desktop App Privacy | Estera",
+                "description": "Understand Estera’s browser demo, optional analytics, local saved journeys, USB device control, and requests to map and developer-file providers.",
+                "inLanguage": "en",
+                "isPartOf": {
+                  "@id": "https://estera-virid.vercel.app/#website"
+                },
+                "dateModified": "2026-10-20",
+                "breadcrumb": {
+                  "@id": "https://estera-virid.vercel.app/privacy#breadcrumb"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://estera-virid.vercel.app/privacy#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Estera",
+                    "item": "https://estera-virid.vercel.app/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Privacy, on the website and in the app",
+                    "item": "https://estera-virid.vercel.app/privacy"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/index.html",
+      "status": 308,
+      "headers": {
+        "location": "/",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/download",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/download",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "slash-variant",
+      "url": "https://estera-virid.vercel.app/download/",
+      "status": 308,
+      "headers": {
+        "location": "/download",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/download.html",
+      "status": 308,
+      "headers": {
+        "location": "/download",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/guides/iphone-location-simulation",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "slash-variant",
+      "url": "https://estera-virid.vercel.app/guides/iphone-location-simulation/",
+      "status": 308,
+      "headers": {
+        "location": "/guides/iphone-location-simulation",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/guides/iphone-location-simulation.html",
+      "status": 308,
+      "headers": {
+        "location": "/guides/iphone-location-simulation",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/guides/routes-and-gpx",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/guides/routes-and-gpx",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "slash-variant",
+      "url": "https://estera-virid.vercel.app/guides/routes-and-gpx/",
+      "status": 308,
+      "headers": {
+        "location": "/guides/routes-and-gpx",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/guides/routes-and-gpx.html",
+      "status": 308,
+      "headers": {
+        "location": "/guides/routes-and-gpx",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/compatibility",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/compatibility",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "slash-variant",
+      "url": "https://estera-virid.vercel.app/compatibility/",
+      "status": 308,
+      "headers": {
+        "location": "/compatibility",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/compatibility.html",
+      "status": 308,
+      "headers": {
+        "location": "/compatibility",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "http-variant",
+      "url": "http://estera-virid.vercel.app/privacy",
+      "status": 308,
+      "headers": {
+        "location": "https://estera-virid.vercel.app/privacy",
+        "content-type": "text/plain"
+      }
+    },
+    {
+      "kind": "slash-variant",
+      "url": "https://estera-virid.vercel.app/privacy/",
+      "status": 308,
+      "headers": {
+        "location": "/privacy",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "html-variant",
+      "url": "https://estera-virid.vercel.app/privacy.html",
+      "status": 308,
+      "headers": {
+        "location": "/privacy",
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "kind": "404",
+      "url": "https://estera-virid.vercel.app/__seo_acceptance_missing_20261020",
+      "status": 404,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      },
+      "title": "Page not found — Estera",
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex, follow\" />"
+      ],
+      "h1Count": 1,
+      "hasMain": true,
+      "hasDownloadLink": false,
+      "jsonLd": []
+    },
+    {
+      "kind": "robots",
+      "url": "https://estera-virid.vercel.app/robots.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      },
+      "body": "# Public content is crawlable. Preview HTML carries noindex.\nUser-agent: *\nAllow: /\n\nSitemap: https://estera-virid.vercel.app/sitemap.xml\n"
+    },
+    {
+      "kind": "sitemap",
+      "url": "https://estera-virid.vercel.app/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      },
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://estera-virid.vercel.app/</loc><lastmod>2026-10-20</lastmod></url>\n  <url><loc>https://estera-virid.vercel.app/download</loc><lastmod>2026-10-20</lastmod></url>\n  <url><loc>https://estera-virid.vercel.app/guides/iphone-location-simulation</loc><lastmod>2026-10-20</lastmod></url>\n  <url><loc>https://estera-virid.vercel.app/guides/routes-and-gpx</loc><lastmod>2026-10-20</lastmod></url>\n  <url><loc>https://estera-virid.vercel.app/compatibility</loc><lastmod>2026-10-20</lastmod></url>\n  <url><loc>https://estera-virid.vercel.app/privacy</loc><lastmod>2026-10-20</lastmod></url>\n</urlset>\n"
+    },
+    {
+      "kind": "asset",
+      "url": "https://estera-virid.vercel.app/assets/estera-social.png",
+      "status": 200,
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    {
+      "kind": "asset",
+      "url": "https://estera-virid.vercel.app/favicon-96.png",
+      "status": 200,
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "kind": "asset",
+      "url": "https://estera-virid.vercel.app/apple-touch-icon.png",
+      "status": 200,
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "kind": "asset",
+      "url": "https://estera-virid.vercel.app/favicon.svg",
+      "status": 200,
+      "headers": {
+        "content-type": "image/svg+xml",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      }
+    },
+    {
+      "kind": "asset",
+      "url": "https://estera-virid.vercel.app/indexnow-key.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "x-vercel-cache": "HIT"
+      }
+    }
+  ]
+}

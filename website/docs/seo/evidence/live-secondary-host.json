@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-20T22:30:52.389Z",
+  "checks": [
+    {
+      "url": "https://estera-larsenbeenk2-3123s-projects.vercel.app/",
+      "status": 302,
+      "location": "https://vercel.com/sso-api?[query omitted]",
+      "xRobotsTag": "noindex"
+    },
+    {
+      "url": "https://estera-larsenbeenk2-3123s-projects.vercel.app/download",
+      "status": 302,
+      "location": "https://vercel.com/sso-api?[query omitted]",
+      "xRobotsTag": "noindex"
+    }
+  ]
+}

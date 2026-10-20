@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-20T22:32:27.608Z",
+  "reason": "Corrected changing accessible-name test selector; only unfinished mobile/no-JS checks and failed desktop Tab diagnostic resumed",
+  "pages": [],
+  "interactions": [
+    {
+      "viewport": 1440,
+      "scenario": "Desktop native dialog Tab sequence diagnostic",
+      "focusSequence": [
+        {
+          "tag": "A",
+          "text": "Download for Mac",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Release notes",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Star on GitHub",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "BODY",
+          "text": "Skip to contentestera.The experienceOne free appSetup guideG",
+          "inDialog": false,
+          "documentFocused": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Close download details",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Download for Mac",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Release notes",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Star on GitHub",
+          "inDialog": true,
+          "documentFocused": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile navigation keyboard open",
+      "passed": false
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile navigation Escape close",
+      "passed": true
+    }
+  ],
+  "noJavaScript": [],
+  "errors": [],
+  "failedRequests": [],
+  "analyticsRequests": [],
+  "fatalError": {
+    "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Main navigation', exact: true }).getByRole('link', { name: 'The experience', exact: true })\u001b[22m\n",
+    "stack": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Main navigation', exact: true }).getByRole('link', { name: 'The experience', exact: true })\u001b[22m\n\n    at /private/tmp/estera-live-browser-remaining.cjs:28:126"
+  },
+  "finishedAt": "2026-10-20T22:32:58.248Z"
+}

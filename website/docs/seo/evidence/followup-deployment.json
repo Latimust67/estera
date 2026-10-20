@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "commit": "6811808b454fa1bdd805ec5431b4b816e466bf9a",
+  "deployment": "dpl_BtY8D8zasbraDmfiPzsgcveXDbtw",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "expected_content_present": true,
+      "canonical": [
+        "https://estera-virid.vercel.app/"
+      ]
+    },
+    {
+      "path": "/download",
+      "status": 200,
+      "expected_content_present": true,
+      "canonical": [
+        "https://estera-virid.vercel.app/download"
+      ]
+    },
+    {
+      "path": "/guides/iphone-location-simulation",
+      "status": 200,
+      "expected_content_present": true,
+      "canonical": [
+        "https://estera-virid.vercel.app/guides/iphone-location-simulation"
+      ]
+    }
+  ]
+}

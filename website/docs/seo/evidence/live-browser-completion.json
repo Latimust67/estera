@@ -1,0 +1,370 @@
+{
+  "checkedAt": "2026-10-20T22:33:40.490Z",
+  "reason": "Awaited React menu state changes with standard Playwright assertions; only unfinished mobile/no-JS checks resumed",
+  "pages": [
+    {
+      "route": "/download",
+      "status": 200,
+      "viewport": 390,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Download Estera for Mac"
+      ],
+      "mainTextLength": 2690,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "route": "/guides/iphone-location-simulation",
+      "status": 200,
+      "viewport": 390,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Your first iPhone location simulation"
+      ],
+      "mainTextLength": 3397,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "route": "/guides/routes-and-gpx",
+      "status": 200,
+      "viewport": 390,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Plan a route. Keep the journey."
+      ],
+      "mainTextLength": 3277,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "route": "/compatibility",
+      "status": 200,
+      "viewport": 390,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Compatibility and preview status"
+      ],
+      "mainTextLength": 3339,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "viewport": 390,
+      "horizontalOverflow": false,
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1": [
+        "Privacy, on the website and in the app"
+      ],
+      "mainTextLength": 3517,
+      "headerVisible": true,
+      "navLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download",
+          "visible": true
+        },
+        {
+          "text": "iPhone setup guide",
+          "href": "/guides/iphone-location-simulation",
+          "visible": true
+        },
+        {
+          "text": "Routes and GPX",
+          "href": "/guides/routes-and-gpx",
+          "visible": true
+        },
+        {
+          "text": "Compatibility",
+          "href": "/compatibility",
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "viewport": 390,
+      "scenario": "Mobile navigation keyboard open",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile navigation Escape close",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile anchor link closes menu",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile download keyboard open/focus",
+      "passed": true,
+      "focusSequence": [
+        {
+          "tag": "A",
+          "text": "Download for Mac",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Release notes",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Star on GitHub",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "BODY",
+          "text": "Skip to contentestera.The experienceOne free appSetup guideG",
+          "inDialog": false,
+          "documentFocused": false
+        },
+        {
+          "tag": "DIALOG",
+          "text": "YOUR NEXT DESTINATIONEstera for Mac.One free desktop app. Pi",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Close download details",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Download for Mac",
+          "inDialog": true,
+          "documentFocused": true
+        },
+        {
+          "tag": "A",
+          "text": "Release notes",
+          "inDialog": true,
+          "documentFocused": true
+        }
+      ],
+      "bounds": {
+        "x": 19,
+        "y": 20,
+        "width": 352,
+        "height": 804
+      }
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile download Escape closes and restores focus",
+      "passed": true
+    },
+    {
+      "viewport": 390,
+      "scenario": "Mobile download close button by keyboard",
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/",
+      "status": 200,
+      "mainTextLength": 4139,
+      "h1": [
+        "Your iPhone.Somewhereelse.✳"
+      ],
+      "downloadLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "Download Estera",
+          "href": "/download"
+        },
+        {
+          "text": "Download and install for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "Get the free desktop app",
+          "href": "/download"
+        },
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "Download for Mac",
+          "href": "https://github.com/larsenbeenk2-ship-it/estera/releases/download/v0.1.2/Estera-0.1.2-macos-arm64.zip"
+        }
+      ],
+      "setupLink": true
+    },
+    {
+      "route": "/download",
+      "status": 200,
+      "mainTextLength": 2690,
+      "h1": [
+        "Download Estera for Mac"
+      ],
+      "downloadLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "Download Estera 0.1.2 for Mac",
+          "href": "https://github.com/larsenbeenk2-ship-it/estera/releases/download/v0.1.2/Estera-0.1.2-macos-arm64.zip"
+        },
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        }
+      ],
+      "setupLink": true
+    },
+    {
+      "route": "/guides/iphone-location-simulation",
+      "status": 200,
+      "mainTextLength": 3397,
+      "h1": [
+        "Your first iPhone location simulation"
+      ],
+      "downloadLinks": [
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "free Mac download",
+          "href": "/download"
+        },
+        {
+          "text": "Download Estera for Mac",
+          "href": "/download"
+        },
+        {
+          "text": "Download for Mac",
+          "href": "/download"
+        }
+      ],
+      "setupLink": true
+    },
+    {
+      "scenario": "Homepage download link navigates with JavaScript disabled",
+      "passed": true,
+      "actualUrl": "https://estera-virid.vercel.app/download"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "analyticsRequests": [],
+  "finishedAt": "2026-10-20T22:33:43.796Z"
+}
