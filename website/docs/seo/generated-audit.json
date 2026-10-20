@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-20T20:18:10.089Z",
+  "checkedAt": "2026-10-20T22:34:11.968Z",
   "mode": "saved production HTML; no browser or live deployment check",
   "site": "https://estera-virid.vercel.app",
   "noindex": false,
@@ -73,7 +73,7 @@
       "h1s": [
         "Download Estera for Mac"
       ],
-      "h2Count": 5,
+      "h2Count": 6,
       "jsonLdBlocks": 1,
       "jsonLdTypes": [
         "WebPage",
@@ -88,14 +88,14 @@
       "imageCount": 0,
       "imagesMissingAlt": [],
       "linkClassification": "by hostname",
-      "internalLinks": 17,
-      "externalLinks": 8,
+      "internalLinks": 19,
+      "externalLinks": 9,
       "unclassifiedLinks": 0,
       "nofollowLinks": 0,
       "scriptOnlyLinks": 0,
       "anchorsWithoutHref": 0,
       "scriptAnchorsWithoutHref": 0,
-      "wordCount": 455,
+      "wordCount": 533,
       "warnings": [],
       "notes": []
     },
@@ -120,7 +120,7 @@
       "h1s": [
         "Your first iPhone location simulation"
       ],
-      "h2Count": 6,
+      "h2Count": 7,
       "jsonLdBlocks": 1,
       "jsonLdTypes": [
         "WebPage",
@@ -142,7 +142,7 @@
       "scriptOnlyLinks": 0,
       "anchorsWithoutHref": 0,
       "scriptAnchorsWithoutHref": 0,
-      "wordCount": 580,
+      "wordCount": 639,
       "warnings": [],
       "notes": []
     },

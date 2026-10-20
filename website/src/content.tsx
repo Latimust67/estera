@@ -44,6 +44,8 @@ export const contentPages: ContentPage[] = [
         <li>Select the intended phone, authorize its connection, and complete the remaining steps before using the location controls.</li>
       </ol>
       <p>The Mac download bundles its runtime and interface. You do not need Node.js, Python, Homebrew, or a terminal to use it. No location command is sent until you explicitly set a location or start a route. Follow the <a href="/guides/iphone-location-simulation">first-session guide</a> for choosing a place and stopping a session.</p>
+      <h2>Choosing an iPhone location changing app</h2>
+      <p>Compare the exact Mac and iPhone requirements, connection method, included features, and evidence for location reset. Estera includes its <a href="/guides/routes-and-gpx">route and GPX tools</a> at no charge, and you can inspect the <a href={GITHUB_URL}>source on GitHub</a>. Its packaged preview targets Apple Silicon Macs on macOS 15+ and iPhones on iOS 17.4+ over USB. Physical iPhone set/reset and clean-machine installation remain unverified; review the <a href="/compatibility">compatibility evidence</a> before deciding whether this preview fits your needs.</p>
       <h2>Updates and other platforms</h2>
       <p>There is no automatic updater. Download and install later releases manually from GitHub. Windows is a source preview, with no Windows installer or native Windows/iPhone validation. Intel Mac packages are not available.</p>
       <p>For source builds and troubleshooting, see the <a href={`${releaseDocs}/DESKTOP.md`}>desktop installation guide</a>, <a href={`${releaseDocs}/DISTRIBUTION.md`}>packaging and license details</a>, and <a href={`${releaseDocs}/WINDOWS.md`}>Windows source instructions</a>.</p>
@@ -61,6 +63,8 @@ export const contentPages: ContentPage[] = [
       <h2>Start with a compatible setup</h2>
       <p>The packaged preview targets Apple Silicon Macs on macOS 15 or later and iPhone USB developer services on iOS 17.4 or later. Keep a USB data cable connected for the entire session. Check the <a href="/compatibility">compatibility page</a> before installing; these are implementation targets, not verified hardware combinations.</p>
       <p>Use the <a href="/download">free Mac download</a> and open Estera from Applications. The website’s globe and route demonstration run in your browser and cannot control a phone. Device actions belong to the local desktop app.</p>
+      <h2>Location changer, simulator, or VPN?</h2>
+      <p>People also call location-simulation tools “location changers.” Estera’s desktop workflow targets coordinates reported through a selected physical iPhone’s developer service; it does not create a virtual iPhone on your Mac. Changing coordinates does not change your phone’s IP address or Apple account region. It also does not establish that every third-party app will use the simulated location. Physical iPhone location set/reset remains unverified for this preview.</p>
       <h2>Connect and authorize your iPhone</h2>
       <ol>
         <li>Connect the USB data cable and unlock your iPhone.</li>
@@ -72,7 +76,7 @@ export const contentPages: ContentPage[] = [
       <h2>Choose a single location</h2>
       <p>Select <strong>Pin</strong>, then search for an address, city, or postal code, or choose a point on the map. Add the city and country when a name is ambiguous. Results show geographic context so you can distinguish similarly named places.</p>
       <p>Choose <strong>Use this location</strong> for the desired point. The explicit <strong>Set phone location</strong> action sends the location command to the selected phone. Searching, looking around the map, or selecting a pin does not by itself start a simulation.</p>
-      <p>A dropped pin keeps its chosen coordinates even when its address label comes from the nearest known address. Map coverage may be incomplete. Location simulation changes coordinates; it does not change the phone’s IP address.</p>
+      <p>A dropped pin keeps its chosen coordinates even when its address label comes from the nearest known address. Map coverage may be incomplete.</p>
       <h2>Preview a journey before starting it</h2>
       <p>Walk, Bike, and Drive add a route between stops. <strong>Preview route</strong> moves the map marker only. The separate <strong>Start drive/ride/walk on iPhone</strong> action sends the journey to the phone. See the <a href="/guides/routes-and-gpx">routes and GPX guide</a> for pace, stop settings, and imported tracks.</p>
       <h2>Stop and reset</h2>
