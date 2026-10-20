@@ -1,0 +1,20 @@
+{
+  "recordedDate": "2026-10-20",
+  "id": "dpl_69KvPXcnDujaAmUoqDVVTrCyFXUG",
+  "project": "estera",
+  "projectId": "prj_O0XlfcbrEVZQzLyalfgridXlsrhS",
+  "target": "production",
+  "state": "READY",
+  "commit": "3ffb38f44e0e655bdd49a0016487b89b25abd0d6",
+  "url": "estera-hzk316yjj-larsenbeenk2-3123s-projects.vercel.app",
+  "canonicalAlias": "estera-virid.vercel.app",
+  "aliasError": null,
+  "buildDurationMs": 5970,
+  "buildCommand": "npm run build",
+  "buildScope": "Type-check, client build, server render build and static prerender. No new browser acceptance run.",
+  "indexNow": {
+    "url": "https://estera-virid.vercel.app/privacy",
+    "status": 200,
+    "meaning": "Submission accepted; does not establish crawling or indexing."
+  }
+}

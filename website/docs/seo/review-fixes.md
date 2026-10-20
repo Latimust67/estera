@@ -12,7 +12,7 @@ The local denial path disables collection **before** saving. If the browser reje
 
 Focused check: `node --test scripts/test-analytics-consent.mjs` — **5 passed, 0 failed**. It executes the real source module using the installed Vite/Rolldown compiler, with browser storage, event, cookie and reload boundaries stubbed. Cases cover two already-active documents, preference removal/clear, resume after a missed notification, failed denial saving, and no automatic activation from another document's grant. It asserts Google’s disable flag, GA-cookie removal, custom-event suppression and the appropriate reload behavior. No network, browser, server or Google test traffic is involved; this is not a live-browser certification.
 
-The initial harness attempted an API that the installed TypeScript package did not expose; it was corrected to reuse the existing Rolldown compiler, after which all five cases passed. No dependency was added. The deployment build will separately type-check and bundle the production source.
+The initial harness attempted an API that the installed TypeScript package did not expose; it was corrected to reuse the existing Rolldown compiler, after which all five cases passed. No dependency was added. The production deployment subsequently passed its type-check, client/server builds and static prerender.
 
 ## Provider hostname filter
 
@@ -21,3 +21,9 @@ The prior assumption that GA4 lacked an Include hostname filter was outdated. Th
 Testing does not discard incoming data. Validate the matching canonical data after the recommended 24–36 hours before activating the permanent processing filter. Activation, measurement-report visibility, CLS/INP delivery, indexing and dated follow-ups remain unverified; their statuses were not upgraded to force a passing score.
 
 The existing bounded follow-up now includes hostname-filter validation on October 23. It reports evidence/readiness and does not activate an unvalidated filter.
+
+## Publication after review
+
+The reviewer inspected the clean replacement filter screenshot and closed its publication concern before commit. Source and evidence were pushed in commit `3ffb38f44e0e655bdd49a0016487b89b25abd0d6`. Vercel production deployment `dpl_69KvPXcnDujaAmUoqDVVTrCyFXUG` reached **READY** with canonical alias `estera-virid.vercel.app` and no alias error. The recorded build took approximately six seconds. [Deployment receipt](evidence/fresh-review-deployment.json).
+
+One IndexNow notification for the changed privacy page returned **HTTP 200** after publication. This is a submission receipt, not proof of indexing. No additional browser acceptance or broad test pass is claimed. The independent report's pre-deployment statements describe the review-time state; this section records the subsequent publication without changing the reviewer's score or outstanding observations.
