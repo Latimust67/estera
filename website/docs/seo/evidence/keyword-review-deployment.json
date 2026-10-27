@@ -1,0 +1,18 @@
+{
+  "recordedAt": "2026-10-27T19:25:04.937349+00:00",
+  "sourceCommit": "ebd7343e1eb1be619a88d94c9091e36073ffc2a8",
+  "deploymentId": "dpl_95GmSPJQXi2Q5NntPtcm9n976iz8",
+  "productionUrl": "https://estera-virid.vercel.app",
+  "deploymentUrl": "https://estera-pyod13hnu-larsenbeenk2-3123s-projects.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "independentReview": {
+    "initial": 8,
+    "reassessment": 8.5,
+    "scope": "Keyword/content correction and proposed SEO direction",
+    "widerCompletionReadiness": 6,
+    "report": "../independent-keyword-review-2026-10-27.md"
+  },
+  "build": "Passed local and Vercel production builds; seven public pages plus 404 and sitemap.",
+  "limits": "No new visual QA, hardware test, account checks, or demonstrated ranking/indexing results. No additional IndexNow submission was made for this review revision; prior URL receipt is recorded separately."
+}
