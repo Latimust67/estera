@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-10-27T19:10:45.689073+00:00",
+  "sourceCommit": "5cf60ce5b9925208b2d9cf3d1907a608cfc9f031",
+  "productionUrl": "https://estera-virid.vercel.app",
+  "deploymentId": "dpl_7XKJdFSycwLuPchKErxRVRwL6wq4",
+  "deploymentUrl": "https://estera-jhf394ibl-larsenbeenk2-3123s-projects.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "localBuild": "Passed; TypeScript, client/server build, seven public pages plus 404 and generated sitemap.",
+  "verificationLimits": "No new visual QA, hardware test, broad audit, artificial Analytics traffic, or live ranking claim.",
+  "indexNow": {
+    "status": 200,
+    "urlCount": 4,
+    "urls": [
+      "https://estera-virid.vercel.app/",
+      "https://estera-virid.vercel.app/download",
+      "https://estera-virid.vercel.app/guides/iphone-location-simulation",
+      "https://estera-virid.vercel.app/guides/compare-iphone-location-changers"
+    ],
+    "meaning": "Receipt only; not crawling or indexing confirmation."
+  }
+}

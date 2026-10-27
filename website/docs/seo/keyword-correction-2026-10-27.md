@@ -1,6 +1,6 @@
 # Keyword and comparison correction — October 27, 2026
 
-Status: content implemented; `npm run build` passed on October 27 and generated seven public pages plus a 404. Publication receipt is pending. No visual QA or broad test suite was run. This is a targeted correction, not a declaration that rankings, hardware validation, Analytics reporting, or every launch follow-up is complete.
+Status: content implemented; `npm run build` passed on October 27 and generated seven public pages plus a 404. Published to `https://estera-virid.vercel.app` from commit `5cf60ce5b9925208b2d9cf3d1907a608cfc9f031`; Vercel deployment `dpl_7XKJdFSycwLuPchKErxRVRwL6wq4` is READY in production. IndexNow received the four changed/new canonical URLs once with HTTP 200. See [publication receipt](evidence/keyword-correction-deployment.json). Receipt is not indexing confirmation. No visual QA or broad test suite was run. This is a targeted correction, not a declaration that rankings, hardware validation, Analytics reporting, or every launch follow-up is complete.
 
 ## Evidence and prioritization
 
