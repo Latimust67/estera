@@ -7,7 +7,7 @@ import { absoluteUrl, HOME_DESCRIPTION, HOME_TITLE, SITE_NOINDEX, SITE_UPDATED, 
 
 export const site = { url: SITE_URL, noindex: SITE_NOINDEX };
 export const pages = [
-  { path: '/', title: HOME_TITLE, description: HOME_DESCRIPTION, heading: 'Free iPhone location simulator for Mac', updated: SITE_UPDATED },
+  { path: '/', title: HOME_TITLE, description: HOME_DESCRIPTION, heading: 'Free iPhone location changer for Mac', updated: SITE_UPDATED },
   ...contentPages.map(({ path, title, description, heading, updated }) => ({ path, title, description, heading, updated })),
 ];
 

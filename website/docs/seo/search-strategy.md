@@ -57,3 +57,7 @@ Suggested download-section copy, subject to implementation review:
 Once the property is verified and data exists, use Search Console to record query/page impressions, clicks, CTR, country/device mix, and indexing status. Compare the same query groups and date windows; distinguish branded Estera demand from non-branded Mac/iPhone queries. A ZIP-link click indicates acquisition intent, not a completed download, installation, or successful phone session. If optional analytics remains disabled, report that limitation rather than substituting fabricated conversion data.
 
 Investigate actual query mismatches before creating more pages. A “best apps” comparison could become useful only with a defensible method, current primary-source facts, disclosed selection criteria, and real test evidence where performance is claimed. No page or SEO package can guarantee first place.
+
+## October 27 correction
+
+The original research above is a historical snapshot. See [the keyword and comparison correction](keyword-correction-2026-10-27.md) for measured Bing related-query evidence, exact-query data limits, revised page targeting, and the sourced comparison page. No Google search volumes or ranking improvement are claimed.

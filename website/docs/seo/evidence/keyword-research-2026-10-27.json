@@ -1,0 +1,108 @@
+{
+  "checkedDate": "2026-10-27",
+  "source": "Authenticated Bing Webmaster Tools / Keyword Research",
+  "filters": {
+    "country": "All",
+    "language": "All",
+    "device": "All",
+    "duration": "3 M"
+  },
+  "metric": "Impressions (UI label; displayed rounded values retained)",
+  "limits": [
+    "Bing-wide keyword research, not Estera impressions or visits.",
+    "Not Google volume or monthly volume.",
+    "Exact calendar bounds not exposed in the observed report.",
+    "Insufficient data is not zero demand.",
+    "No reliable comparison of exact changer versus simulator volume is available."
+  ],
+  "seeds": [
+    {
+      "keyword": "iphone location changer",
+      "trend": "Bing doesn’t have enough data to show trend here.",
+      "related": [
+        {
+          "keyword": "location changer iphone",
+          "displayedImpressions": "49"
+        },
+        {
+          "keyword": "location changer",
+          "displayedImpressions": "1.8K"
+        },
+        {
+          "keyword": "imyfone anyto",
+          "displayedImpressions": "5.2K"
+        },
+        {
+          "keyword": "imyfone anyto download",
+          "displayedImpressions": "298"
+        },
+        {
+          "keyword": "anyto",
+          "displayedImpressions": "1.5K"
+        },
+        {
+          "keyword": "location spoofer",
+          "displayedImpressions": "1.3K"
+        },
+        {
+          "keyword": "tuneskit location changer",
+          "displayedImpressions": "330"
+        },
+        {
+          "keyword": "iphone location",
+          "displayedImpressions": "478"
+        },
+        {
+          "keyword": "change location",
+          "displayedImpressions": "819"
+        },
+        {
+          "keyword": "imyfone any to",
+          "displayedImpressions": "53"
+        },
+        {
+          "keyword": "change my location",
+          "displayedImpressions": "445"
+        },
+        {
+          "keyword": "get vanish app",
+          "displayedImpressions": "49"
+        },
+        {
+          "keyword": "magfone location changer",
+          "displayedImpressions": "641"
+        },
+        {
+          "keyword": "how to change location on iphone",
+          "displayedImpressions": "214"
+        },
+        {
+          "keyword": "vanish app",
+          "displayedImpressions": "486"
+        },
+        {
+          "keyword": "vanish",
+          "displayedImpressions": "15.1K"
+        },
+        {
+          "keyword": "ipvanish",
+          "displayedImpressions": "22.3K"
+        }
+      ],
+      "resultIntent": "Mix of product pages and comparison articles; observed first listed comparison was Geekflare, with official vendor pages also listed."
+    },
+    {
+      "keyword": "iphone location simulator",
+      "trend": "Bing doesn’t have enough data to show trend here.",
+      "relatedState": "No data available; 0 rows",
+      "resultIntent": "Mix of Xcode/iPhone Simulator questions and physical-phone location tools."
+    },
+    {
+      "keyword": "best location changing apps",
+      "trend": "Bing doesn’t have enough data to show trend here.",
+      "relatedState": "No data available; 0 rows",
+      "resultIntent": "Predominantly comparison articles and software lists; no numerical demand claim supported."
+    }
+  ],
+  "firstPartyBaseline": "Use day-7-account-checks.json. Google 3 generic site:vercel.app impressions and Bing 1 branded impression cannot validate target-query demand or content lift."
+}

@@ -5,9 +5,9 @@ if (parsedUrl.protocol !== 'https:' || parsedUrl.pathname !== '/' || parsedUrl.s
 }
 
 export const SITE_URL = parsedUrl.origin;
-export const SITE_UPDATED = '2026-10-20';
+export const SITE_UPDATED = '2026-10-27';
 export const SITE_NOINDEX = import.meta.env.SEO_NOINDEX === true;
-export const HOME_TITLE = 'Estera — Free iPhone Location Simulator for Mac';
-export const HOME_DESCRIPTION = 'Simulate iPhone locations and routes with Estera, a free, open-source Mac app. Apple Silicon, macOS 15+ and USB required. Download the preview and read setup guides.';
+export const HOME_TITLE = 'Estera — Free iPhone Location Changer for Mac';
+export const HOME_DESCRIPTION = 'Explore Estera, a free, open-source iPhone location changer preview for Mac. Apple Silicon, macOS 15+ and USB required. Physical iPhone set/reset remains unverified.';
 export const absoluteUrl = (path: string) => new URL(path, `${SITE_URL}/`).href;
 export const normalizePath = (path: string) => path === '/' ? '/' : path.replace(/\/$/, '').replace(/\.html$/, '') || '/';

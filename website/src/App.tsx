@@ -63,7 +63,8 @@ function ReleaseDialog({ open, close }: { open: boolean; close: () => void }) {
 }
 
 const questions = [
-  ['What does Estera do?', 'Estera is an iPhone location simulator controlled from your Mac. Choose a point on the map or create a simulated journey with walking, cycling, and driving. Your physical location stays the same.'],
+  ['What does Estera do?', 'Estera is a free, open-source iPhone location changer preview for Mac. Plan a pin or a walking, cycling, or driving journey. Its USB workflow targets iPhone developer-service location simulation; physical iPhone set/reset remains unverified.'],
+  ['Is a location changer the same as a VPN?', 'No. A location changer or GPS spoofer targets reported coordinates. A VPN changes the network connection and IP address seen by services. Estera does not change your IP address or Apple account region, and third-party app behavior is not guaranteed.'],
   ['How do I connect my iPhone?', 'Start with a USB connection, unlock your iPhone, and trust your Mac when prompted. Estera guides you through the remaining device setup. See the GitHub release notes for current compatibility and known limitations.'],
   ['Are pins and journeys separate editions?', 'No. Estera is one free, open-source app. Single locations, walking, cycling, driving, stops, speed controls, saved journeys, and GPX files are all included.'],
   ['Does this website change my location?', 'No. The globe and route preview are interactive illustrations. They do not access your location, connect to your phone, or make changes to any device.'],
@@ -96,9 +97,9 @@ export default function App() {
     <main id="main">
       <section className="hero" id="atlas-hero" aria-labelledby="hero-title">
         <div className="hero-stage"><div className="hero-grid wrap">
-          <div className="hero-copy"><div className="eyebrow hero-eyebrow"><span className="status-dot"/>FREE IPHONE LOCATION SIMULATOR FOR MAC</div>
+          <div className="hero-copy"><div className="eyebrow hero-eyebrow"><span className="status-dot"/>FREE IPHONE LOCATION CHANGER FOR MAC</div>
             <h1 id="hero-title">Your iPhone.<br/>Somewhere<br/><em>else.</em><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
-            <p>A little freedom to be anywhere.<br/>Simulate your iPhone’s location from your Mac over USB.<br/>One free, open-source desktop app.</p>
+            <p>Plan a pin or a whole journey.<br/>A free, open-source iPhone location changer for Mac, using USB location simulation.<br/>Preview release: physical iPhone set/reset remains unverified.</p>
             <div className="hero-actions"><a href="/download" className="button button-primary" onClick={event => { if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); setReleaseOpen(true); } }}>Download for Mac <ArrowDownToLine size={18}/></a><a className="text-link" href="#preview">Take a test drive <ArrowRight size={16}/></a></div>
             <span className="hero-note"><Monitor size={13}/> Apple Silicon · macOS 15+ · Prerelease</span>
           </div>
@@ -143,7 +144,7 @@ export default function App() {
 
       <section className="faq-section wrap" id="questions" aria-labelledby="faq-title"><div className="faq-intro"><SectionLabel number="04">BEFORE YOU GO</SectionLabel><h2 id="faq-title">A few good<br/><em>questions.</em></h2><p>A little clarity for the road ahead.</p><Compass size={63} strokeWidth={.7} aria-hidden="true"/></div><div className="faq-list">{questions.map(([question, answer], index) => <details key={question}><summary><span className="faq-number">0{index + 1}</span><span>{question}</span><ChevronDown size={19}/></summary><p>{answer}</p></details>)}</div></section>
 
-      <section className="guide-directory wrap" aria-labelledby="guides-title"><h2 id="guides-title">Set up Estera. Plan your first journey.</h2><p>Start with the Mac download and USB setup guide. Learn how pins, route controls and GPX files work, and check the preview’s current requirements before connecting your iPhone.</p><nav aria-label="Estera guides"><a href="/download">Download and install for Mac</a><a href="/guides/iphone-location-simulation">iPhone location setup guide</a><a href="/guides/routes-and-gpx">Routes, playback and GPX</a><a href="/compatibility">Compatibility and limitations</a></nav><p>Updated <time dateTime="2026-10-20">October 20, 2026</time> · <a href={GITHUB_URL}>Estera project</a></p></section>
+      <section className="guide-directory wrap" aria-labelledby="guides-title"><h2 id="guides-title">Set up Estera. Plan your first journey.</h2><p>Start with the Mac download and USB setup guide. Learn how pins, route controls and GPX files work, and check the preview’s current requirements before connecting your iPhone.</p><nav aria-label="Estera guides"><a href="/download">Download and install for Mac</a><a href="/guides/iphone-location-simulation">iPhone location setup guide</a><a href="/guides/routes-and-gpx">Routes, playback and GPX</a><a href="/compatibility">Compatibility and limitations</a><a href="/guides/compare-iphone-location-changers">Compare iPhone location changers</a></nav><p>Updated <time dateTime="2026-10-27">October 27, 2026</time> · <a href={GITHUB_URL}>Estera project</a></p></section>
       <JourneyEnd destinations={destinations} destination={destination} onDestinationChange={setDestination}/>
     </main>
     <AtlasFooter/>

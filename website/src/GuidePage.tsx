@@ -9,6 +9,7 @@ export const pageLinks = [
   ['/guides/iphone-location-simulation', 'iPhone setup guide'],
   ['/guides/routes-and-gpx', 'Routes and GPX'],
   ['/compatibility', 'Compatibility'],
+  ['/guides/compare-iphone-location-changers', 'Compare location changers'],
   ['/privacy', 'Privacy'],
 ];
 

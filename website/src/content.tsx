@@ -17,12 +17,12 @@ export type ContentPage = {
 export const contentPages: ContentPage[] = [
   {
     path: '/download',
-    title: 'Download Estera for Mac — Free iPhone Location Simulator',
-    description: 'Download the free Estera Mac preview for Apple Silicon and macOS 15+. Read USB requirements, installation steps, signing details, and current limitations.',
+    title: 'Download a Free iPhone Location Changer for Mac | Estera',
+    description: 'Download Estera’s free iPhone location changer preview for Apple Silicon Macs on macOS 15+. Read USB setup, signing details, and unverified device limitations.',
     heading: 'Download Estera for Mac',
-    intro: `Estera ${RELEASE_VERSION} is a free, open-source desktop preview for planning pins and simulated iPhone journeys from your Mac.`,
-    updated: '2026-10-20',
-    related: ['/compatibility', '/guides/iphone-location-simulation', '/privacy'],
+    intro: `Estera ${RELEASE_VERSION} is a free, open-source iPhone location changer preview for Mac. Plan pins and simulated journeys, then follow the USB setup guide and review the device limitations below.`,
+    updated: '2026-10-27',
+    related: ['/compatibility', '/guides/iphone-location-simulation', '/guides/compare-iphone-location-changers', '/privacy'],
     content: <>
       <h2>One app. Every included feature. $0.</h2>
       <p>Pin, Walk, Bike, Drive, route preview, saved journeys, and GPX import/export are included. There is no subscription, paid Pro tier, account requirement, or GitHub-star requirement. Estera is open source under GPL-3.0-or-later.</p>
@@ -45,6 +45,7 @@ export const contentPages: ContentPage[] = [
       </ol>
       <p>The Mac download bundles its runtime and interface. You do not need Node.js, Python, Homebrew, or a terminal to use it. No location command is sent until you explicitly set a location or start a route. Follow the <a href="/guides/iphone-location-simulation">first-session guide</a> for choosing a place and stopping a session.</p>
       <h2>Choosing an iPhone location changing app</h2>
+      <p>Our <a href="/guides/compare-iphone-location-changers">comparison of iPhone location changers for Mac</a> explains the published cost, setup, source-code, and route-tool differences between Estera, Mirage, LocationSimulator2, and iMyFone AnyTo.</p>
       <p>Compare the exact Mac and iPhone requirements, connection method, included features, and evidence for location reset. Estera includes its <a href="/guides/routes-and-gpx">route and GPX tools</a> at no charge, and you can inspect the <a href={GITHUB_URL}>source on GitHub</a>. Its packaged preview targets Apple Silicon Macs on macOS 15+ and iPhones on iOS 17.4+ over USB. Physical iPhone set/reset and clean-machine installation remain unverified; review the <a href="/compatibility">compatibility evidence</a> before deciding whether this preview fits your needs.</p>
       <h2>Updates and other platforms</h2>
       <p>There is no automatic updater. Download and install later releases manually from GitHub. Windows is a source preview, with no Windows installer or native Windows/iPhone validation. Intel Mac packages are not available.</p>
@@ -52,19 +53,89 @@ export const contentPages: ContentPage[] = [
     </>,
   },
   {
+    path: '/guides/compare-iphone-location-changers',
+    title: 'Compare iPhone Location Changers for Mac: Free & Paid | Estera',
+    description: 'Compare Estera, Mirage, LocationSimulator2, and iMyFone AnyTo by cost, Mac setup, USB or Wi-Fi, source availability, routes, and documented limitations.',
+    heading: 'Compare iPhone location changers for Mac',
+    intro: 'Choose a tool around your Mac, your iPhone, and the task you need: setting a pin, playing a route, or testing an app. Start with what is included for free and what setup is required.',
+    updated: '2026-10-27',
+    related: ['/download', '/compatibility', '/guides/iphone-location-simulation', '/guides/routes-and-gpx'],
+    content: <>
+      <h2>What this comparison covers</h2>
+      <p>Estera publishes this comparison of four tools with a Mac-to-iPhone workflow. We compared their official documentation on October 27, 2026, using the same questions: cost, Mac requirements, connection, source availability, and route tools. We have not tested these products against each other on physical phones. Published features below are documentation claims, not measured reliability or compatibility results.</p>
+      <p>Estera is included as our own preview product. Its physical iPhone location set/reset and clean-machine installation remain unverified. This selection is not an exhaustive list, and there is no overall winner.</p>
+
+      <h2>Free tools, trials, and setup at a glance</h2>
+      <table>
+        <caption>Published cost and connection model; check each product’s current requirements before installing.</caption>
+        <thead><tr><th scope="col">Tool</th><th scope="col">Cost model</th><th scope="col">Mac and connection</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="#estera">Estera preview</a></th><td>Free included features; GPL-3.0-or-later</td><td>Apple Silicon, macOS 15+; USB throughout</td></tr>
+          <tr><th scope="row"><a href="#mirage">Mirage</a></th><td>Free; GPL v3</td><td>Apple Silicon, macOS 12+; USB</td></tr>
+          <tr><th scope="row"><a href="#locationsimulator">LocationSimulator2</a></th><td>Check current beta availability and terms</td><td>Control app plus Mac helper; USB pairing before Wi-Fi</td></tr>
+          <tr><th scope="row"><a href="#anyto">iMyFone AnyTo</a></th><td>Limited trial and paid plans</td><td>Mac desktop workflow; initial USB pairing, then optional Wi-Fi</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="estera">Estera: free routes and GPX in a Mac preview</h3>
+      <ul>
+        <li><strong>Cost and source:</strong> the included features are free, with no account, subscription, or Pro tier. The source uses GPL-3.0-or-later.</li>
+        <li><strong>Setup:</strong> the packaged download targets Apple Silicon Macs on macOS 15+ and iOS 17.4+ developer services. A USB data cable stays connected throughout the session.</li>
+        <li><strong>Documented tools:</strong> pins, Walk/Bike/Drive routes, map preview, saved journeys, and GPX import/export.</li>
+        <li><strong>Evidence limits:</strong> physical iPhone set/reset and clean-machine installation are unverified. The package is ad-hoc signed and not notarized by Apple. No Intel Mac package or Windows installer is offered.</li>
+      </ul>
+      <p>Sources: <a href="/download">download and installation details</a>, <a href="/guides/routes-and-gpx">route and GPX guide</a>, <a href="/compatibility">compatibility evidence</a>, and <a href={GITHUB_URL}>Estera source</a>.</p>
+
+      <h3 id="mirage">Mirage: a free, open-source pin workflow</h3>
+      <ul>
+        <li><strong>Cost and source:</strong> the official site describes free use, no account, and GPL v3 source.</li>
+        <li><strong>Setup:</strong> the download targets Apple Silicon and macOS 12+. The published workflow uses a USB-connected iPhone and Developer Mode. The repository lists iOS 16–18; that is not evidence for every later iOS version.</li>
+        <li><strong>Documented tools:</strong> map pin selection, place search, saved locations, and a Stop/reset control. The sources reviewed do not establish route playback or GPX support.</li>
+        <li><strong>Evidence limits:</strong> these are the maintainer’s descriptions. We have not independently verified physical-device behavior or compared reset reliability.</li>
+      </ul>
+      <p>Sources: <a href="https://elliotpadfield.github.io/mirage-landing/">Mirage’s official product page</a> and <a href="https://github.com/ElliotPadfield/mirage">repository and setup requirements</a>.</p>
+
+      <h3 id="locationsimulator">LocationSimulator2: separate controls and a Mac helper</h3>
+      <ul>
+        <li><strong>Cost and source:</strong> check the current TestFlight and helper-download terms. The cited pages do not establish a permanent free-use commitment. The current control-app repository does not include the app source, and the helper is explicitly not open source.</li>
+        <li><strong>Setup:</strong> both LocationSimulator2 and the LocationSpoofer Mac helper are required. The documentation describes physical iPhone/iPad and iOS Simulator targets, Developer Mode on iOS 16+, and USB pairing before Wi-Fi use.</li>
+        <li><strong>Documented tools:</strong> routes, GPX, and walking, cycling, and driving modes.</li>
+        <li><strong>Evidence limits:</strong> the older LocationSimulator project is a different product version. Its license or system requirements should not be assumed to describe this two-app setup. We have not hardware-tested the current apps.</li>
+      </ul>
+      <p>Sources: <a href="https://locationsimulator.net/">official overview</a>, <a href="https://locationsimulator.net/downloads/">current downloads</a>, <a href="https://github.com/Schlaubischlump/LocationSimulator2">control-app repository</a>, and <a href="https://github.com/Schlaubischlump/LocationSpoofer-App">helper repository</a>.</p>
+
+      <h3 id="anyto">iMyFone AnyTo: a commercial option with a limited trial</h3>
+      <ul>
+        <li><strong>Cost and source:</strong> a free download leads to a limited trial and paid plans. Subscriptions and a lifetime option are advertised; check device and feature limits before purchasing. Open-source status was not established in the cited documentation.</li>
+        <li><strong>Setup:</strong> the desktop product offers PC/Mac workflows for iPhone and Android. Its iPhone guide starts with USB and Trust pairing, then documents a same-network Wi-Fi option.</li>
+        <li><strong>Documented tools:</strong> teleport, two-point and multi-point routes, joystick controls, and GPX import/export.</li>
+        <li><strong>Evidence limits:</strong> vendor feature and compatibility claims have not been independently tested here. Trial access is not the same as unlimited free use.</li>
+      </ul>
+      <p>Sources: <a href="https://www.imyfone.com/location-changer/">AnyTo’s official product page</a>, <a href="https://www.imyfone.com/location-changer/purchase/">plan terms</a>, and <a href="https://www.imyfone.com/location-changer/guide/">desktop setup and GPX guide</a>.</p>
+
+      <h2>Which location changing app is best for your setup?</h2>
+      <p>Start with requirements you can check. For a free, inspectable pin workflow, compare Mirage’s published requirements with your phone. For free route planning and GPX in Estera, decide whether its current preview limitations are acceptable. If Wi-Fi or iOS Simulator targets are essential, read LocationSimulator2’s two-app requirements. If you need a commercial product across phone platforms, inspect AnyTo’s exact plan and compatibility terms.</p>
+      <p>For any tool, check the exact OS versions, administrator or Developer Mode steps, internet requirements, and reset instructions. If dependable physical-device behavior is essential, seek evidence for your particular Mac and iPhone combination before relying on a feature list. This comparison does not establish that any tool is undetectable or works with every third-party app.</p>
+
+      <h2>Is a GPS location changer the same as a VPN?</h2>
+      <p>A location changer, simulator, or GPS spoofer targets reported coordinates. A VPN concerns the network connection and IP address. Changing coordinates does not itself change your IP address or Apple account region. Our <a href="/guides/iphone-location-simulation">iPhone location setup guide</a> explains Estera’s workflow and the difference between a map preview and a phone command.</p>
+      <p>If Estera’s requirements fit your task, review its <a href="/compatibility">current evidence and limitations</a>, then <a href="/download">download the free Mac preview</a>.</p>
+    </>,
+  },
+  {
     path: '/guides/iphone-location-simulation',
-    title: 'iPhone Location Simulation Guide for Mac | Estera',
-    description: 'Follow Estera’s USB setup, choose a pin, understand preview versus device actions, and use Stop/reset. Includes Mac preview compatibility and reset limitations.',
-    heading: 'Your first iPhone location simulation',
+    title: 'How to Change iPhone Location with Estera on Mac',
+    description: 'Learn Estera’s Mac workflow for changing iPhone GPS location over USB: setup, pins, routes, and Stop/reset. Physical device set/reset remains unverified in this preview.',
+    heading: 'How to change iPhone location with Estera',
     intro: 'Connect the intended phone, choose a place, then explicitly start the simulation. This guide describes the Mac preview workflow; physical iPhone set/reset remains unverified.',
-    updated: '2026-10-20',
+    updated: '2026-10-27',
     related: ['/download', '/guides/routes-and-gpx', '/compatibility'],
     content: <>
       <h2>Start with a compatible setup</h2>
       <p>The packaged preview targets Apple Silicon Macs on macOS 15 or later and iPhone USB developer services on iOS 17.4 or later. Keep a USB data cable connected for the entire session. Check the <a href="/compatibility">compatibility page</a> before installing; these are implementation targets, not verified hardware combinations.</p>
       <p>Use the <a href="/download">free Mac download</a> and open Estera from Applications. The website’s globe and route demonstration run in your browser and cannot control a phone. Device actions belong to the local desktop app.</p>
       <h2>Location changer, simulator, or VPN?</h2>
-      <p>People also call location-simulation tools “location changers.” Estera’s desktop workflow targets coordinates reported through a selected physical iPhone’s developer service; it does not create a virtual iPhone on your Mac. Changing coordinates does not change your phone’s IP address or Apple account region. It also does not establish that every third-party app will use the simulated location. Physical iPhone location set/reset remains unverified for this preview.</p>
+      <p>People also call location-simulation tools “location changers” or “GPS spoofers.” Estera’s desktop workflow targets coordinates reported through a selected physical iPhone’s developer service; it does not create a virtual iPhone on your Mac. Changing coordinates does not change your phone’s IP address or Apple account region. It also does not establish that every third-party app will use the simulated location. Physical iPhone location set/reset remains unverified for this preview.</p>
       <h2>Connect and authorize your iPhone</h2>
       <ol>
         <li>Connect the USB data cable and unlock your iPhone.</li>
