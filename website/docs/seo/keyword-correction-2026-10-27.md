@@ -46,3 +46,7 @@ Sources: [Mirage](https://elliotpadfield.github.io/mirage-landing/) and [reposit
 - The existing November 3 checkpoint should record query/page impressions and indexing with October 27 marked as the content-change date. The short, sparse post-change window cannot prove causality or stable rankings.
 - Physical-device evidence, Analytics report receipt/filter validation, and the missing Bing sitemap receipt remain tracked separately. This content correction does not close them.
 - No broad tests, visual QA, artificial Analytics traffic, account-configuration changes, or hardware claims belong to this correction.
+
+## Independent review remedies
+
+The initial independent review rated the correction/direction 8/10. The comparison now uses consistent Mac requirements, phone versions, connection, and availability/trial fields for each product, explicitly labeling unestablished facts. The [measurement hypothesis and priority plan](keyword-measurement-plan.md) names the audience, provisional reporting market, mapped query/page signals, inconclusive conditions, and owners for measurement/hardware/search-service gaps. These edits do not close those external evidence gaps. The independent reassessment is **8.5/10** for the correction and direction, with no remaining material fix in these bounded edits. Wider completion/readiness remains **6/10**. See the [full independent review](independent-keyword-review-2026-10-27.md). The revised build passed; publication receipt for the remedies is pending.

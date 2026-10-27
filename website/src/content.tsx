@@ -80,7 +80,10 @@ export const contentPages: ContentPage[] = [
       <h3 id="estera">Estera: free routes and GPX in a Mac preview</h3>
       <ul>
         <li><strong>Cost and source:</strong> the included features are free, with no account, subscription, or Pro tier. The source uses GPL-3.0-or-later.</li>
-        <li><strong>Setup:</strong> the packaged download targets Apple Silicon Macs on macOS 15+ and iOS 17.4+ developer services. A USB data cable stays connected throughout the session.</li>
+        <li><strong>Mac requirements:</strong> the packaged download targets Apple Silicon and macOS 15 or later. Intel Mac packages are not available.</li>
+        <li><strong>Phone versions:</strong> the implementation targets iOS 17.4+ developer services. No Mac/iPhone combination has verified physical set/reset evidence yet.</li>
+        <li><strong>Connection:</strong> a USB data cable stays connected throughout the session.</li>
+        <li><strong>Availability and trial limits:</strong> the Mac preview ZIP is available with all included features free; there is no paid trial cutoff or Pro tier.</li>
         <li><strong>Documented tools:</strong> pins, Walk/Bike/Drive routes, map preview, saved journeys, and GPX import/export.</li>
         <li><strong>Evidence limits:</strong> physical iPhone set/reset and clean-machine installation are unverified. The package is ad-hoc signed and not notarized by Apple. No Intel Mac package or Windows installer is offered.</li>
       </ul>
@@ -89,7 +92,10 @@ export const contentPages: ContentPage[] = [
       <h3 id="mirage">Mirage: a free, open-source pin workflow</h3>
       <ul>
         <li><strong>Cost and source:</strong> the official site describes free use, no account, and GPL v3 source.</li>
-        <li><strong>Setup:</strong> the download targets Apple Silicon and macOS 12+. The published workflow uses a USB-connected iPhone and Developer Mode. The repository lists iOS 16–18; that is not evidence for every later iOS version.</li>
+        <li><strong>Mac requirements:</strong> the official download targets Apple Silicon and macOS 12 or later.</li>
+        <li><strong>Phone versions:</strong> the repository lists iOS 16–18. Support for later versions was not established in the reviewed documentation.</li>
+        <li><strong>Connection:</strong> the published workflow uses USB and Developer Mode; the repository describes a one-time administrator authorization for iOS 17+ setup.</li>
+        <li><strong>Availability and trial limits:</strong> the official site offers a free Mac download with no account requirement; it is not presented as a paid trial.</li>
         <li><strong>Documented tools:</strong> map pin selection, place search, saved locations, and a Stop/reset control. The sources reviewed do not establish route playback or GPX support.</li>
         <li><strong>Evidence limits:</strong> these are the maintainer’s descriptions. We have not independently verified physical-device behavior or compared reset reliability.</li>
       </ul>
@@ -98,7 +104,10 @@ export const contentPages: ContentPage[] = [
       <h3 id="locationsimulator">LocationSimulator2: separate controls and a Mac helper</h3>
       <ul>
         <li><strong>Cost and source:</strong> check the current TestFlight and helper-download terms. The cited pages do not establish a permanent free-use commitment. The current control-app repository does not include the app source, and the helper is explicitly not open source.</li>
-        <li><strong>Setup:</strong> both LocationSimulator2 and the LocationSpoofer Mac helper are required. The documentation describes physical iPhone/iPad and iOS Simulator targets, Developer Mode on iOS 16+, and USB pairing before Wi-Fi use.</li>
+        <li><strong>Mac requirements:</strong> both the control app and the LocationSpoofer Mac helper are required. A minimum macOS version and supported Mac architectures were not established in the reviewed documentation.</li>
+        <li><strong>Phone versions:</strong> physical iPhone/iPad and iOS Simulator targets are described, but a complete supported phone-OS range was not established. Developer Mode instructions for iOS 16+ are setup guidance, not a verified compatibility range.</li>
+        <li><strong>Connection:</strong> USB pairing precedes the documented Wi-Fi workflow.</li>
+        <li><strong>Availability and trial limits:</strong> the control app is distributed through TestFlight and the helper through a separate download. A permanent free-use commitment or exact trial limits were not established in the reviewed pages.</li>
         <li><strong>Documented tools:</strong> routes, GPX, and walking, cycling, and driving modes.</li>
         <li><strong>Evidence limits:</strong> the older LocationSimulator project is a different product version. Its license or system requirements should not be assumed to describe this two-app setup. We have not hardware-tested the current apps.</li>
       </ul>
@@ -107,7 +116,10 @@ export const contentPages: ContentPage[] = [
       <h3 id="anyto">iMyFone AnyTo: a commercial option with a limited trial</h3>
       <ul>
         <li><strong>Cost and source:</strong> a free download leads to a limited trial and paid plans. Subscriptions and a lifetime option are advertised; check device and feature limits before purchasing. Open-source status was not established in the cited documentation.</li>
-        <li><strong>Setup:</strong> the desktop product offers PC/Mac workflows for iPhone and Android. Its iPhone guide starts with USB and Trust pairing, then documents a same-network Wi-Fi option.</li>
+        <li><strong>Mac requirements:</strong> a Mac desktop workflow is offered. A consistent minimum macOS version and architecture list were not established from the reviewed pages; confirm the requirements for the current download with the vendor.</li>
+        <li><strong>Phone versions:</strong> iPhone and Android workflows are advertised. A complete, consistent phone-OS range was not established in this review, and advertised support is not independent compatibility evidence.</li>
+        <li><strong>Connection:</strong> the iPhone guide starts with USB and Trust pairing, then documents a same-network Wi-Fi option.</li>
+        <li><strong>Availability and trial limits:</strong> the desktop download has limited trial access. Exact trial allowances and paid device/feature limits depend on the current offer; consult the linked plan terms before purchase.</li>
         <li><strong>Documented tools:</strong> teleport, two-point and multi-point routes, joystick controls, and GPX import/export.</li>
         <li><strong>Evidence limits:</strong> vendor feature and compatibility claims have not been independently tested here. Trial access is not the same as unlimited free use.</li>
       </ul>
